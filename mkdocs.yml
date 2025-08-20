@@ -12,7 +12,7 @@ plugins:
   - git-revision-date-localized:
       fallback_to_build_date: true
   - glightbox
-  - mkdocs-jupyter     
+  - mkdocs-jupyter
 
 markdown_extensions:
   - admonition
@@ -27,8 +27,3 @@ markdown_extensions:
   - pymdownx.emoji
   - pymdownx.tasklist:
       custom_checkbox: true
-
-nav:
-  - Inicio: index.md
-  - Portfolio:
-      - "Análisis": analysis.ipynb   
