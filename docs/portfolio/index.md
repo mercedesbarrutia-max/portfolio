@@ -5,10 +5,8 @@ date: 2025-01-01
 
 # Portafolio
 
-Bienvenido a las entradas del portafolio. Usá la plantilla para crear nuevas páginas numeradas
-(`01-...`, `02-...`).
+Bienvenido a las entradas del portafolio. 
 
-- Plantilla: [plantilla.md](plantilla.md)
 - Primera entrada: [01-primera-entrada.md](01-primera-entrada.md)
 - Segunda entrada: [02-segunda-entrada.md](analysis.ipynb)
 
