@@ -6,7 +6,7 @@ date: 2025-08-13
 # Entrada 01 — Mi primera experiencia
 
 ## Contexto
-Actividad inicial del curso en la cual trabajé con el dataset **Iris**. 
+Actividad inicial del curso en la cual trabajé con el dataset **Iris**.
 El objetivo fue practicar la carga de datos desde diferentes fuentes (GitHub, seaborn, sklearn, archivo local) y verificar la consistencia entre datasets y comenzar a responder preguntas simples con las especies de flores. 
 
 ## Objetivos
