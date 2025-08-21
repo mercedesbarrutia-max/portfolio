@@ -1,14 +1,18 @@
 ---
 title: "Acerca de mí"
-date: 2025-01-01
+date: 2025-08-20
 ---
 
 # Acerca de mí
 
-Breve presentación personal, intereses y objetivos para este curso.
+Mi nombre es Mercedes Barrutia, tengo 19 años y estudio Ingeniería en inteligencia artificial. 
 
 ## Habilidades
-- Lenguajes / herramientas relevantes
+- Ingles (nivel C2)
+- Trabajo en equipo 
+- Organización y proactividad
 
 ## Contacto
-- Email institucional
+- mercedes.barrutia@correo.ucu.edu.uy
+- mercedesbarrutiabaldoni@gmail.com
+- 093577169

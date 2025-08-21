@@ -5,8 +5,6 @@ date: 2025-01-01
 
 # Plantilla de entrada de portafolio
 
-Completa esta plantilla para cada entrada del portafolio.
-
 ## Contexto
 Breve descripción del tema/actividad.
 
