@@ -30,15 +30,15 @@ El objetivo fue conocer la estructura de los datos, identificar valores faltante
 ## Evidencias
 - Notebook del análisis: [analysis.ipynb](analysis.ipynb)  
 
-##Reflexión
+## Reflexión
 Aprendizaje: recordé funciones de pandas, matplotlib y seaborn y aprendí caracteristicas de EDA.
 Próximos pasos: análisis con mayor profundidad, con datos actualizados y mayor cantidad de variables. 
 
-##Conclusión
+## Conclusión
 El análisis exploratorio me permitió validar el dataset de Netflix, con datos que nos permitieron trabajr y practicar (valores faltantes y variables confusas). Aun con esto, se 
 identificaron tendencias como el crecimiento sostenido de producciones en las últimas dos décadas y el predominio de películas sobre series. Esta base abre la posibilidad a análisis más avanzados de contenido y estrategias de producción.
 
-#Referencias 
+# Referencias 
 Dataset: https://www.kaggle.com/shivamb/netflix-shows
 https://pandas.pydata.org/docs/
 https://seaborn.pydata.org/
