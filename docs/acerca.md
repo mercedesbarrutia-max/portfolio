@@ -9,11 +9,11 @@ Mi nombre es Mercedes Barrutia, tengo 19 años y estoy estudiando Ingeniería en
 
 ## Habilidades
 
-**Idiomas:** Inglés nivel C2
-**Trabajo en equipo:** disfruto colaborar en equipos y proyectos multidisciplinarios, aportando ideas y aprendiendo de los demás.
-**Organización y proactividad:** me destaco por planificar mis tareas de forma eficiente y cumplir objetivos en tiempo y forma.
-**Comunicación:** tengo facilidad para transmitir ideas de manera clara en presentaciones.
-**Intereses:** matemática, programación en Python, análisis de datos, algoritmos de inteligencia artificial y desarrollo de proyectos innovadores.
+- **Idiomas:** Inglés nivel C2
+- **Trabajo en equipo:** disfruto colaborar en equipos y proyectos multidisciplinarios, aportando ideas y aprendiendo de los demás.
+- **Organización y proactividad:** me destaco por planificar mis tareas de forma eficiente y cumplir objetivos en tiempo y forma.
+- **Comunicación:** tengo facilidad para transmitir ideas de manera clara en presentaciones.
+- **Intereses:** matemática, programación en Python, análisis de datos, algoritmos de inteligencia artificial y desarrollo de proyectos innovadores.
 
 ## Contacto
 - mercedes.barrutia@correo.ucu.edu.uy
