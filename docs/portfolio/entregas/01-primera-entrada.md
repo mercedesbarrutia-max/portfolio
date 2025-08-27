@@ -34,7 +34,7 @@ El objetivo fue practicar la carga de datos desde diferentes fuentes (GitHub, se
    - ¿Cuál es la especie con promedio de sépalo más ancho?  
 
 ## Evidencias
-- Notebook del análisis: [practica_uno_idd_.ipynb](practica_uno_idd_.ipynb)
+- Notebook del análisis: [entrega_uno.ipynb](uno.ipynb)
 
 
 ## Reflexión

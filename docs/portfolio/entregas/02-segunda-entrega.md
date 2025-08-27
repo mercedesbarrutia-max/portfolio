@@ -28,10 +28,10 @@ El objetivo fue conocer la estructura de los datos, identificar valores faltante
 5. **Hallazgos preliminares**: se detectaron columnas con muchos nulos y se confirmó que el dataset tiene más películas que series y que la mayor parte del contenido se concentra en los últimos 20 años.
 
 ## Evidencias
-- Notebook del análisis: [analysis.ipynb](analysis.ipynb)  
+- Notebook del análisis: [entrega_dos.ipynb](dos.ipynb)  
 
 ## Reflexión
-Aprendizaje: recordé funciones de pandas, matplotlib y seaborn y aprendí caracteristicas de EDA.
+Aprendizaje: recordé funciones de pandas, matplotlib y seaborn y aprendí caracteristicas de EDPA.
 Próximos pasos: análisis con mayor profundidad, con datos actualizados y mayor cantidad de variables. 
 
 ## Conclusión
