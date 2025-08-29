@@ -1,0 +1,116 @@
+/* =========================
+   PALETA (CLARO / OSCURO)
+   ========================= */
+:root {
+  /* Colores de TÍTULOS (contenido) */
+  --titles-color: #a63084;   /* bordó claro */
+
+  /* Colores de BARRA SUPERIOR y TABS */
+  --header-bg: #691c53;      /* turquesa claro */
+  --header-fg: #ffffff;      /* texto/íconos barra */
+
+  /* (Opcional) acento general si lo necesitás en otros estilos */
+  --accent-color: #c5679f;
+}
+
+[data-md-color-scheme="slate"] {
+  --titles-color: #387d76;   /* verde-azulado oscuro */
+  --header-bg: #15524c;      /* barra en oscuro */
+  --header-fg: #ffffff;
+  --accent-color: #f1d47f;
+}
+
+/* =========================
+   TIPOGRAFÍA Y BLOQUES
+   ========================= */
+.md-typeset h1 { font-weight: 800; letter-spacing: -0.01em; }
+.md-typeset h2 {
+  font-weight: 700; letter-spacing: -0.005em;
+  padding-bottom: .2rem; margin-bottom: .8rem;
+  border-bottom: 2px solid color-mix(in srgb, var(--titles-color) 25%, transparent);
+}
+.md-typeset h3 { font-weight: 700; }
+
+/* Imágenes y tablas */
+.md-typeset img { display:block; margin: 1rem auto; border-radius: .6rem; }
+.md-typeset table:not(.docutils) th,
+.md-typeset table:not(.docutils) td { padding: .6rem .8rem; }
+
+/* Admonitions y código */
+.md-typeset .admonition { border-radius: .6rem; }
+.md-typeset code, .md-typeset pre code { font-size: 0.95em; }
+
+/* Footer */
+.md-footer-meta__inner { opacity: .9; }
+
+/* =========================
+   COLORES DE TÍTULOS
+   ========================= */
+/* Título grande del layout (fuera del .md-typeset) */
+.md-content__title,
+.md-content__title .md-ellipsis {
+  color: var(--titles-color) !important;
+}
+
+/* Headings dentro del contenido */
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4,
+.md-typeset h5,
+.md-typeset h6 {
+  color: var(--titles-color) !important;
+}
+
+/* Enlaces dentro de headings */
+.md-typeset h1 a,
+.md-typeset h2 a,
+.md-typeset h3 a {
+  color: inherit !important;
+  text-decoration: none;
+}
+
+/* Soporte para títulos renderizados desde notebooks (mkdocs-jupyter) */
+.md-typeset .jp-RenderedHTMLCommon h1,
+.md-typeset .jp-RenderedHTMLCommon h2,
+.md-typeset .jp-RenderedHTMLCommon h3,
+.md-typeset .jp-RenderedHTMLCommon h4,
+.md-typeset .jp-RenderedHTMLCommon h5,
+.md-typeset .jp-RenderedHTMLCommon h6 {
+  color: var(--titles-color) !important;
+}
+
+/* =========================
+   BARRA SUPERIOR Y TABS
+   ========================= */
+.md-header,
+.md-tabs {
+  background-color: var(--header-bg) !important;
+  color: var(--header-fg) !important;
+}
+
+/* Íconos y textos dentro de la barra */
+.md-header .md-header__button,
+.md-header .md-header__title,
+.md-header .md-header__topic,
+.md-header .md-header__title .md-ellipsis,
+.md-header .md-icon {
+  color: var(--header-fg) !important;
+  fill: var(--header-fg) !important;
+}
+
+/* Borde bajo la barra en claro (sutil) */
+:root .md-header {
+  box-shadow: inset 0 -1px 0 color-mix(in srgb, var(--header-fg) 10%, transparent);
+}
+
+/* =========================
+   LOGO (opcional)
+   ========================= */
+/* Tamaño del logo en la barra */
+.md-header__button.md-logo img {
+  height: 28px;
+  width: auto;
+}
+
+
