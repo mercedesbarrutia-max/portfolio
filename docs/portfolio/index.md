@@ -20,13 +20,13 @@ date: 2025-08-08
 ## Entradas del Portafolio
 
 - **[Primera entrada](entregas/01-primera-entrada.md)**  
-  *Exploración de datos y primeras visualizaciones.*
+  *Exploración del dataset Iris*
 
 - **[Segunda entrada](entregas/02-segunda-entrega.md)**  
-  *Procesamiento y modelado de información.*
+  *EDA Netflix Dataset con pandas*
 
 - **[Tercera entrada](entregas/03-tercera-entrega.md)**  
-  *Resultados finales y conclusiones del proyecto.*
+  *NYC Yellow Taxi*
 
 ---
 
