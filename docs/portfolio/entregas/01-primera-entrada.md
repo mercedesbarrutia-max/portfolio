@@ -21,20 +21,26 @@ El objetivo fue practicar la carga de datos desde diferentes fuentes (GitHub, se
 - Documentar la experiencia en el portafolio — 30 min  
 
 ## Desarrollo
+
 1. **Entorno:** se instalaron librerías y se configuró la estructura para guardar resultados.  
+
 2. **Carga de datos:** se importó el dataset Iris desde cuatro fuentes distintas:
-   - CSV en GitHub.
-   - Dataset de seaborn.
-   - Dataset de sklearn (`load_iris`).
-   - Archivo subido manualmente.  
+
+   * CSV en GitHub.
+   * Dataset de seaborn.
+   * Dataset de sklearn (`load_iris`).
+   * Archivo subido manualmente.  
+
 3. **Comparación de datasets:** se verificó que las distintas fuentes entregan la misma información.  
+
 4. **Preguntas iniciales:**
-   - ¿Cuál es la especie con pétalo más largo?  
-   - ¿Existe relación entre el largo del sépalo y del pétalo?  
-   - ¿Cuál es la especie con promedio de sépalo más ancho?  
+
+* ¿Cuál es la especie con pétalo más largo?
+* ¿Existe relación entre el largo del sépalo y del pétalo?
+* ¿Cuál es la especie con promedio de sépalo más ancho?  
 
 ## Evidencias
-- Notebook del análisis: [entrega_uno.ipynb](uno.ipynb)
+   - Notebook del análisis: [entrega_uno.ipynb](uno.ipynb)
 
 
 ## Reflexión

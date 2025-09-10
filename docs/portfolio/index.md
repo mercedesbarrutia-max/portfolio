@@ -19,15 +19,16 @@ date: 2025-08-08
 
 ## Entradas del Portafolio
 
-- **[Primera entrada](entregas/01-primera-entrada.md)**  
-  *Exploración del dataset Iris*
+- **[01 - Exploración del dataset Iris](entregas/01-primera-entrada.md)**  
+  
 
-- **[Segunda entrada](entregas/02-segunda-entrega.md)**  
-  *EDA Netflix Dataset con pandas*
+- **[02 - EDA Netflix Dataset con pandas](entregas/02-segunda-entrega.md)**  
+  
+- **[03 - NYC Yellow Taxi](entregas/03-tercera-entrega.md)**  
+  
 
-- **[Tercera entrada](entregas/03-tercera-entrega.md)**  
-  *NYC Yellow Taxi*
-
+- **[04 - AMES HOUSING](entregas/04-cuarta-entrega.md)**  
+  
 ---
 
 
