@@ -1,70 +1,123 @@
----
-
-title: "Análisis Exploratorio — Archivo Tres (NYC Yellow Taxi)"
-date: 2025-08-27
-----------------
-
-# Análisis Exploratorio — Archivo tres (NYC Yellow Taxi)
+# Análisis Exploratorio — Archivo Cuatro (AMES Housing)
 
 ## Contexto
 
-Se realizó un análisis sobre el dataset **AMES HOUSING**, integrándolo con el mapa de zonas de taxis y un calendario de eventos. El foco estuvo en validar la calidad de los datos, preparar datos para joins y obtener vistas descriptivas útiles para luego contestar preguntas.
+El análisis se realizó sobre el dataset **AMES Housing**, con el objetivo de estudiar la calidad de los datos, detectar outliers, implementar estrategias de imputación y preparar un pipeline reproducible para futuros modelos predictivos.
 
 ## Objetivos
 
-* Cargar el dataset principal en formato **Parquet** y auxiliares (zonas, calendario).
-* Normalizar nombres/tipos y **verificar datos** para joins.
-* Identificar y cuantificar **valores faltantes** en columnas clave.
-* Generar métricas descriptivas (horarios, correlaciones, cobertura de zonas).
+* Detectar y cuantificar valores atípicos (outliers) con distintos métodos.  
+* Identificar tipos de missing data (MCAR/MAR/MNAR) y definir estrategias de imputación.  
+* Comparar distintas técnicas de imputación (media, mediana, moda).  
+* Validar el efecto de las imputaciones en distribuciones y correlaciones.  
+* Implementar un pipeline con sklearn.
 
-## Actividades 
+## Actividades
 
-* Carga y exploración inicial — 20 min
-* Limpieza, normalización y verificación de joins — 20 min
-* Análisis de valores faltantes — 10 min
-* Visualizaciones y métricas — 25 min
-* Conclusiones — 20 min
+* Detección de outliers — 15 min  
+* Visualización de distribuciones y outliers — 15 min  
+* Estrategias de imputación simples (mean, median, mode) — 15 min  
+* Imputación condicional por grupos — 15 min  
+* Verificación — 10 min  
+* Comparación de distribuciones y correlaciones — 15 min  
+* Creación de pipeline de limpieza reproducible — 15 min  
 
 ## Desarrollo
 
-1. **Carga de datos**
+1. **Detección de Outliers**  
+   * Métodos aplicados: **IQR** (distribuciones sesgadas) y **Z-Score** ( distribuciones normales).  
+   * Se cuantificaron outliers en columnas clave.
+   * Se visualizaron mediante **boxplots** con límites IQR y dispersión logarítmica en variables sesgadas.
+   * Resultados:
+      * RESUMEN DE OUTLIERS:
+  
+      Total de outliers detectados: 3365.0
+      Porcentaje promedio de outliers: 2.94%
+      Columna con más outliers: 459.0
 
-   * Yellow Taxi: **3,066,766** filas, **19** columnas.
-   * Zonas: **265** filas, **4** columnas.
-   * Período observado en trips: **2008‑12‑31 23:01:42** a **2023‑02‑01 00:56:53**.
+      SalePrice:
+      IQR outliers: 55 (1.9%)
+      Z-Score outliers: 29 (1.0%)
 
-2. **Normalización y preparación**
+      Lot Area:
+      IQR outliers: 127 (4.3%)
+      Z-Score outliers: 29 (1.0%)
 
-   * Estandarización de variables en nombres de columnas (ej.: `PULocationID` → `pulocationid`).
-   * Creación de `pickup_date` y verificación de tipos para joins.
-   * Limpieza básica previa a joins.
+      Year Built:
+      IQR outliers: 8 (0.3%)
+      Z-Score outliers: 7 (0.2%)
 
-3. **Integración (JOINS)**
+      Garage Area:
+      IQR outliers: 42 (1.4%)
+      Z-Score outliers: 17 (0.6%)
 
-   * **trips + zones**
-   * **trips + zones + calendar**
+      - `results/entrega4/outliers_analysis.png`   
 
-4. **Verificamos los valores faltantes**
+2. **Análisis de Missing Data**  
+   
+     - `results/entrega4/g1.png`  
+  
+   * Clasificación preliminar de missing:  
+     - *Year Built*: tendencia a ser **MAR**.  
+     - *Garage Area/Type*: **MNAR**.  
+     - *SalePrice*: sin faltantes detectados.  
+     - Variables categóricas: faltantes mínimos.  
+
+3. **Estrategias de Imputación**  
+   * **Numéricas**: media, mediana, moda según distribución.  
+   * **Categóricas**: moda o “Unknown”.  
+   * **Smart Imputation**:  
+     - `Year Built` → mediana  
+     - `Garage Area` → indicador si no hay garaje o mediana de barrio 
+     - `SalePrice` → mediana por barrio  
+     - `Garage Type` → moda 
+
+4. **Anti-Leakage y Validación**  
+   * Se aplicó split en Train/Valid/Test antes de imputar.  
+   * Imputers ajustados solo con Train y aplicados al resto.  
+
+   * Resultados:
+      SPLIT DE DATOS 
+      Train: 1758 registros
+      Valid: 586 registros
+      Test: 586 registros
+      Columnas numéricas: 38
+      Columnas categóricas: 43
+      Anti-leakage aplicado: fit solo en train, transform en todo
+
+5. **Comparación de distribuciones y correlaciones**  
+   * Histogramas y barras compararon datos originales vs imputados.  
+   * Heatmaps de correlaciones mostraron diferencias menores tras imputación.  
+   - `results/entrega4/distribution_comparison.png` 
+   - `results/entrega4/correlation_comparison.png`   
+  
+6. **Pipeline reproducible**  
+   * Construcción de un **ColumnTransformer + Pipeline** en sklearn.  
+   * Incluyó imputación (median, most_frequent), escalado (StandardScaler) y codificación categórica (OneHotEncoder).  
+   * Resultados:
+      Shape antes del pipeline: {df.shape}
+      Shape después del pipeline: (2930, 46)
 
 ## Evidencias
 
 * Notebook del análisis: **[04 - AMES valores faltantes.ipynb](cuatro.ipynb)**
-
+    
 ## Reflexión
 
-* **Aprendizajes técnicos**: lectura directa de **Parquet** (mejor que CSV en tiempos y memoria), verificación de datos para evitar errores al hacer join y la utilidad del **LEFT JOIN** para conservar todos los viajes aunque falte la zona. 
+* **Aprendizajes**:  
+  - Importancia de distinguir entre tipos de missing data (MCAR/MAR/MNAR).  
+  - Diferencia entre métodos de outlier detection (IQR vs Z-Score).  
+  - Uso de estrategias de imputación (por grupo, luego global).  
+  - Necesidad de pipelines para reproducibilidad y evitar data leakage.  
 
-* **Siguientes pasos**:
-
-  * Incorporar dropoff zones y análisis origen‑destino.
-  * Modelar demanda por franja horaria y borough. 
-  * Posible incorporación de **tarifas dinámicas.
+* **Siguientes pasos**:  
+  - Testear métodos más avanzados.  
+  - Integrar este pipeline en un flujo completo de modelado (regresión o árboles).  
 
 ## Conclusión
 
-El dataset está **completo** para las variables que analizamos y fue útil para aprender sobre parquet, tema desconocido hasta el momento. Ahora la base queda lista para profundizar en patrones origen‑destino o segmentación por zonas.
+El dataset quedó **limpio, imputado y con outliers caracterizados**, listo para usar en un modelo predictivo confiable. Se documentaron todas las decisiones y se consolidó un **pipeline**.
 
 ## Referencias
 
-* pandas (documentación): [https://pandas.pydata.org/docs/](https://pandas.pydata.org/docs/)
-* pyarrow / fastparquet 
+* scikit-learn pipelines — [https://scikit-learn.org/stable/modules/compose.html](https://scikit-learn.org/stable/modules/compose.html)  
