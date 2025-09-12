@@ -21,6 +21,7 @@ El objetivo fue conocer la estructura de los datos, identificar valores faltante
 - Síntesis de hallazgos — 30 min  
 
 ## Desarrollo
+
 1. **Carga de datos**
    
    Se utilizó `pandas` para leer el CSV  (`pd.read_csv(url)`).
@@ -33,9 +34,9 @@ El objetivo fue conocer la estructura de los datos, identificar valores faltante
    
    - `df.isnull().sum().sort_values(ascending=False)` para ranking de nulos.  
    
-   - `results/entrega1/valores.png`   
+   `results/entrega1/valores.png`   
   
-   - `results/entrega1/outliers.png` 
+   `results/entrega1/outliers.png` 
 
 3. **Visualizaciones**: 
 
@@ -43,31 +44,34 @@ El objetivo fue conocer la estructura de los datos, identificar valores faltante
 
    * Se contaron las frecuencias de cada categoría
    * Se visualizó lo mencionado y distribuciones por categoría:
-  
-   - `results/entrega1/g.png` 
+   `results/entrega1/g.png` 
    * Se visualizaron tendencias temporales:
-   - `results/entrega1/tem.png` 
+   `results/entrega1/tem.png` 
    
 4. **ANÁLISIS DE PAÍSES CON VISUALIZACIONES**
    
    * Los 5 países con mayor contenido son:
+
    United States     2609
    India              838
    United Kingdom     601
    Canada             318
    France             271
-   - `results/entrega1/gg.png`
+
+   `results/entrega1/gg.png`
+  
    * Los 5 ratings más comunes son:
+  
    TV-MA    2027
    TV-14    1698
    TV-PG     701
    R         508
    PG-13     286
-   - `results/entrega1/rat.png`
+   `results/entrega1/rat.png`
     
 5. **Dashboard interactivo**
    
-   - `results/entrega1/dash.png`
+   `results/entrega1/dash.png`
 
 6. **Se respondieron preguntas adicionales en el notebook.** 
    

@@ -30,13 +30,13 @@ Se realizó un análisis sobre el dataset **Yellow Taxi** de NYC, integrándolo 
 
 1. **Carga de datos**
 
-   - `pd.read_parquet(url)` para viajes (`trips`).  
-   - `pd.read_csv()` para zonas.  
-   - Calendario cargado como DataFrame auxiliar.  
+- `pd.read_parquet(url)` para viajes (`trips`).  
+- `pd.read_csv()` para zonas.  
+- Calendario cargado como DataFrame auxiliar.  
   
-   * Yellow Taxi: **3,066,766** filas, **19** columnas.
-   * Zonas: **265** filas, **4** columnas.
-   * Período observado en trips: **2008‑12‑31 23:01:42** a **2023‑02‑01 00:56:53**.
+* Yellow Taxi: **3,066,766** filas, **19** columnas.
+* Zonas: **265** filas, **4** columnas.
+* Período observado en trips: **2008‑12‑31 23:01:42** a **2023‑02‑01 00:56:53**.
 
 2. **Normalización y preparación**
 
@@ -48,19 +48,19 @@ Se realizó un análisis sobre el dataset **Yellow Taxi** de NYC, integrándolo 
    trips = trips.dropna()
    zones['borough'] = zones['borough'].fillna('Desconocido')
 
-1. **Integración (JOINS)**
+3. **Integración (JOINS)**
    
    * **trips + zones** por `pulocationid`.  
    * **trips + zones + calendar** por `pickup_date`. 
 
-2. **Análisis descriptivo y correlaciones**
+4. **Análisis descriptivo y correlaciones**
     
    * Agregado por borough (`groupby`).  
    * Comparación de días normales vs días especiales (`is_special_day`).
    * Correlaciones entre variables numéricas clave: `trip_distance`, `total_amount`, `fare_amount`, `tip_amount`.  
    * Visualización con heatmap de seaborn.
   
-3. **Se respondieron preguntas adicionales en el notebook.** 
+5. **Se respondieron preguntas adicionales en el notebook.** 
 
    Para finalizar se respondieron preguntas de análisis más profundo, las cuales fueron anexadas en la entrada del código. Las mismas pueden verse allí mismo.
 
