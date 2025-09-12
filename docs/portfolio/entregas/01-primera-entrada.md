@@ -26,10 +26,10 @@ El objetivo fue practicar la carga de datos desde diferentes fuentes (GitHub, se
 
 2. **Carga de datos:** se importó el dataset Iris desde cuatro fuentes distintas:
 
-   * CSV en GitHub.
-   * Dataset de seaborn.
-   * Dataset de sklearn (`load_iris`).
-   * Archivo subido manualmente.  
+* CSV en GitHub.
+* Dataset de seaborn.
+* Dataset de sklearn (`load_iris`).
+* Archivo subido manualmente.  
 
 3. **Comparación de datasets:** se verificó que las distintas fuentes entregan la misma información.  
 
