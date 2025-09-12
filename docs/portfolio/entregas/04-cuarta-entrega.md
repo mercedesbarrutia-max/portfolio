@@ -1,3 +1,9 @@
+
+---
+
+# 04-cuarta-entrega.md (AMES Housing)
+
+```markdown
 # Análisis Exploratorio — Archivo Cuatro (AMES Housing)
 
 ## Contexto
@@ -24,7 +30,7 @@ El análisis se realizó sobre el dataset **AMES Housing**, con el objetivo de e
 
 ## Desarrollo
 
-1. **Detección de Outliers**  
+**1\. Detección de Outliers**  
    
    * Métodos aplicados: **IQR** (distribuciones sesgadas) y **Z-Score** ( distribuciones normales).  
    * Se cuantificaron outliers en columnas clave.
@@ -52,19 +58,20 @@ El análisis se realizó sobre el dataset **AMES Housing**, con el objetivo de e
       IQR outliers: 42 (1.4%)
       Z-Score outliers: 17 (0.6%)
 
-      - `results/entrega4/outliers_analysis.png`   
+      ![outliers](../../results/entrega4/outliers_analysis.png) 
 
-2. **Análisis de Missing Data**  
+**2\. Análisis de Missing Data**  
    
-     - `results/entrega4/g1.png`  
-  
+   ![valores faltantes1](../../results/entrega4/missing_patterns.png)
+   ![valores faltantes2](../../results/entrega4/g1.png) 
+
    * Clasificación preliminar de missing:  
      - *Year Built*: tendencia a ser **MAR**.  
      - *Garage Area/Type*: **MNAR**.  
      - *SalePrice*: sin faltantes detectados.  
      - Variables categóricas: faltantes mínimos.  
 
-3. **Estrategias de Imputación**  
+**3\. Estrategias de Imputación**  
    
    * **Numéricas**: media, mediana, moda según distribución.  
    * **Categóricas**: moda o “Unknown”.  
@@ -74,7 +81,7 @@ El análisis se realizó sobre el dataset **AMES Housing**, con el objetivo de e
      - `SalePrice` → mediana por barrio  
      - `Garage Type` → moda 
 
-4. **Anti-Leakage y Validación**  
+**4\. Anti-Leakage y Validación**  
    
    * Se aplicó split en Train/Valid/Test antes de imputar.  
    * Imputers ajustados solo con Train y aplicados al resto.  
@@ -88,12 +95,12 @@ El análisis se realizó sobre el dataset **AMES Housing**, con el objetivo de e
       Columnas categóricas: 43
       Anti-leakage aplicado: fit solo en train, transform en todo
 
-5. **Comparación de distribuciones y correlaciones**  
+**5\. Comparación de distribuciones y correlaciones**  
    * Histogramas y barras compararon datos y heatmaps de correlaciones mostraron diferencias chicas:
-   - `results/entrega4/distribution_comparison.png` 
-   - `results/entrega4/correlation_comparison.png`   
+   ![distribucion](../../results/entrega4/distribution_comparison.png) 
+   ![correlacion](../../results/entrega4/correlation_comparison.png)  
   
-6. **Pipeline reproducible**  
+**6\. Pipeline reproducible**  
    
    * Construcción de un **ColumnTransformer + Pipeline** en sklearn.  
    * Incluyó imputación (median, most_frequent), escalado (StandardScaler) y codificación categórica (OneHotEncoder).  
@@ -101,7 +108,7 @@ El análisis se realizó sobre el dataset **AMES Housing**, con el objetivo de e
       Shape antes del pipeline: (2930, 82)
       Shape después del pipeline: (2930, 46)
 
-7.  **Se respondieron preguntas adicionales en el notebook.** 
+**7\. Se respondieron preguntas adicionales en el notebook.** 
    
    Para finalizar se respondieron preguntas de análisis más profundo, las cuales fueron anexadas en la entrada del código. Las mismas pueden verse allí mismo.
 

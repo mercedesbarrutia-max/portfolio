@@ -22,41 +22,40 @@ Finalmente se trabajó con el dataset cargado desde CSV. Esto permitió ejercita
 - Formular y responder preguntas de negocio iniciales — 20 min  
 - Documentar la experiencia en el portafolio — 20 min  
 
-
 ## Desarrollo
 
-1. **Entorno**  
+**1\. Entorno**  
    Se instalaron librerías y se configuró la estructura para guardar resultados. Se importaron `pandas`, `numpy`, `seaborn`, `matplotlib`.  
 
-2. **Carga de datos**  
-   
-   Se importó el dataset Iris desde cuatro fuentes distintas.   
-   - CSV en GitHub → `pd.read_csv(url)`.  
-   - Dataset de seaborn → `sns.load_dataset("iris")`.  
-   - Dataset de sklearn → `load_iris(as_frame=True)`.  
-   - Archivo local → `files.upload()` en Colab.  
-   - Se compararon los dataframes con `df1.equals(df2)` para comprobar consistencia.  
+**2\. Carga de datos**  
+   Se importó el dataset Iris desde cuatro fuentes distintas.  
 
-3. **Detección de valores faltantes y outliers**  
-   
-   - Valores faltantes: `df.isna().sum()`.  
-   - Exploración con `describe()`, histogramas y boxplots.  
-   - Frecuencias → `df["species"].value_counts()`.  
- 
-4. **Se buscaron las correlaciones numéricas**
+    - CSV en GitHub → `pd.read_csv(url)`.  
+    - Dataset de seaborn → `sns.load_dataset("iris")`.  
+    - Dataset de sklearn → `load_iris(as_frame=True)`.  
+    - Archivo local → `files.upload()` en Colab.  
+    - Se compararon los dataframes con `df1.equals(df2)` para comprobar consistencia.  
+
+**3\. Detección de valores faltantes y outliers**  
+
+    - Valores faltantes: `df.isna().sum()`.  
+    - Exploración con `describe()`, histogramas y boxplots.  
+    - Frecuencias → `df["species"].value_counts()`.  
+
+**4\. Se buscaron las correlaciones numéricas**  
    Con `df.corr()` y conversiones categóricas (`astype('category')`). 
 
-5. **Preguntas iniciales:**
+**5\. Preguntas iniciales**  
 
-   * ¿Cuál es la especie con pétalo más largo?  
-   * ¿Existe relación entre el largo del sépalo y del pétalo?  
-   * ¿Cuál es la especie con promedio de sépalo más ancho?  
+    - ¿Cuál es la especie con pétalo más largo?  
+    - ¿Existe relación entre el largo del sépalo y del pétalo?  
+    - ¿Cuál es la especie con promedio de sépalo más ancho?  
 
-6.  **Se respondieron preguntas adicionales en el notebook.** 
+**6\. Se respondieron preguntas adicionales en el notebook.**  
    Para finalizar se respondieron preguntas de análisis más profundo, las cuales fueron anexadas en la entrada del código. Las mismas pueden verse allí mismo.
 
 ## Evidencias
-- Notebook del análisis: [entrega_uno.ipynb](uno.ipynb)
+- Notebook del análisis: [entrega_uno.ipynb](entrega_uno.ipynb)
 
 ## Reflexión
 Lo más desafiante: cargar los datos desde distintas fuentes y formas que no conocía.  
@@ -64,6 +63,3 @@ Próximos pasos: avanzar hacia análisis más profundo (estadísticas comparativ
 
 ## Conclusión
 Esta primera práctica permitió reforzar conceptos básicos de manejo de datos en Python. El dataset Iris fue ideal para practicar carga, exploración y validación de datos.  
-
----------------------
-

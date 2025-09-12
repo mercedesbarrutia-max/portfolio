@@ -22,77 +22,78 @@ El objetivo fue conocer la estructura de los datos, identificar valores faltante
 
 ## Desarrollo
 
-1. **Carga de datos**
-   
-   Se utilizó `pandas` para leer el CSV  (`pd.read_csv(url)`).
+**1\. Carga de datos**  
 
-2. **Exploración inicial y detección de valores faltantes**
-   
-   Con `shape`, `head`, `info` y `describe` se obtuvo un panorama general de las variables y se consultó si había datos faltantes por columna. 
-   
-   - `df.dtypes` y `df.isna().sum()` para tipos y valores faltantes.  
-   
-   - `df.isnull().sum().sort_values(ascending=False)` para ranking de nulos.  
-   
-   `results/entrega1/valores.png`   
-  
-   `results/entrega1/outliers.png` 
+   Se utilizó `pandas` para leer el CSV (`pd.read_csv(url)`)
 
-3. **Visualizaciones**: 
-
-   Con `matplotlib` y `seaborn` se graficó y se exploraron distribuciones de variables. Con `sns.histplot`, `sns.countplot` y `sns.boxplot` para distribuciones.  
-
-   * Se contaron las frecuencias de cada categoría
-   * Se visualizó lo mencionado y distribuciones por categoría:
-   `results/entrega1/g.png` 
-   * Se visualizaron tendencias temporales:
-   `results/entrega1/tem.png` 
+**2\. Exploración inicial y detección de valores faltantes**  
    
-4. **ANÁLISIS DE PAÍSES CON VISUALIZACIONES**
-   
-   * Los 5 países con mayor contenido son:
+   Con `shape`, `head`, `info` y `describe` se obtuvo un panorama general de las variables y se consultó si había datos faltantes por columna.  
 
-   United States     2609
-   India              838
-   United Kingdom     601
-   Canada             318
-   France             271
+   ```python
+   df.dtypes
+   df.isna().sum()
+   df.isnull().sum().sort_values(ascending=False)
+   ```
 
-   `results/entrega1/gg.png`
-  
-   * Los 5 ratings más comunes son:
-  
-   TV-MA    2027
-   TV-14    1698
-   TV-PG     701
-   R         508
-   PG-13     286
-   `results/entrega1/rat.png`
-    
-5. **Dashboard interactivo**
-   
-   `results/entrega1/dash.png`
+   ![Valores faltantes](../results/entrega2/valores.png)  
+   ![Outliers](../results/entrega2/outliers.png)  
 
-6. **Se respondieron preguntas adicionales en el notebook.** 
+**3\. Visualizaciones** 
    
-   Para finalizar se respondieron preguntas de análisis más profundo, las cuales fueron anexadas en la entrada del código. Las mismas pueden verse allí mismo.
+   Con `matplotlib` y `seaborn` se graficó y se exploraron distribuciones de variables (`sns.histplot`, `sns.countplot`, `sns.boxplot`).  
+
+   - Se contaron las frecuencias de cada categoría.  
+   - Distribuciones por categoría:  
+     ![Distribuciones por categoría](../results/entrega2/g.png)  
+   - Tendencias temporales:  
+     ![Tendencias temporales](../results/entrega2/tem.png)  
+
+**4\. Análisis de países con visualizaciones**  
+
+   - Los 5 países con mayor contenido son:  
+
+     ```
+     United States     2609
+     India              838
+     United Kingdom     601
+     Canada             318
+     France             271
+     ```
+
+     ![Top países](../results/entrega2/gg.png)  
+
+   - Los 5 ratings más comunes son:  
+
+     ```
+     TV-MA    2027
+     TV-14    1698
+     TV-PG     701
+     R         508
+     PG-13     286
+     ```
+
+     ![Top ratings](../results/entrega2/rat.png)  
+
+**5\. Dashboard interactivo**  
+   
+   ![Dashboard](../results/entrega2/dash.png)  
+
+**6\. Se respondieron preguntas adicionales en el notebook**  
+   
+   Para finalizar se respondieron preguntas de análisis más profundo, las cuales fueron anexadas en la entrada del código.  
 
 ## Evidencias
-
 - Notebook del análisis: [entrega_dos.ipynb](dos.ipynb)  
 
 ## Reflexión
-
 Aprendizaje: recordé funciones de pandas, matplotlib y seaborn y aprendí características de EDPA.  
 Próximos pasos: análisis con mayor profundidad, con datos actualizados y mayor cantidad de variables.  
 
 ## Conclusión
-
 El análisis exploratorio me permitió validar el dataset de Netflix, con datos que nos permitieron trabajar y practicar (valores faltantes y variables confusas). Aun con esto, se identificaron tendencias como el crecimiento sostenido de producciones en las últimas dos décadas y el predominio de películas sobre series.  
 
-# Referencias 
-
-Dataset: 
-https://www.kaggle.com/shivamb/netflix-shows  
-https://pandas.pydata.org/docs/  
-https://seaborn.pydata.org/  
+## Referencias 
+- Dataset: [Netflix Shows (Kaggle)](https://www.kaggle.com/shivamb/netflix-shows)  
+- [Documentación de pandas](https://pandas.pydata.org/docs/)  
+- [Documentación de seaborn](https://seaborn.pydata.org/)  
