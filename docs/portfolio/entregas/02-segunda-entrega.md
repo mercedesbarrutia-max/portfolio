@@ -9,8 +9,6 @@ date: 2025-08-21
 Se realizó un análisis exploratorio del dataset público de Netflix, que contiene información sobre películas y series.  
 El objetivo fue conocer la estructura de los datos, identificar valores faltantes y obtener visualizaciones descriptivas.
 
-En el notebook de esta entrega se trabajó con el dataset **Iris**, cargado desde múltiples fuentes (CSV online, seaborn, sklearn y archivo subido). Esto sirvió para ejercitar la validación y consistencia de datasets, además del análisis principal de Netflix.
-
 ## Objetivos
 - Cargar y explorar el dataset de Netflix desde una fuente online.
 - Identificar y cuantificar datos faltantes.
@@ -23,34 +21,44 @@ En el notebook de esta entrega se trabajó con el dataset **Iris**, cargado desd
 - Síntesis de hallazgos — 30 min  
 
 ## Desarrollo
-1. **Carga de datos**: se utilizó `pandas` para leer el CSV.  
-   > 🔧 **En código**:  
-   - `pd.read_csv(url)` para Netflix.  
-   - Para Iris se usaron:  
-     - CSV desde GitHub (`iris.csv`).  
-     - `sns.load_dataset("iris")`.  
-     - `sklearn.datasets.load_iris(as_frame=True)`.  
-     - `files.upload()` en Colab para archivo local.  
+1. **Carga de datos**
+   Se utilizó `pandas` para leer el CSV  (`pd.read_csv(url)`).
 
-2. **Exploración inicial**: con `shape`, `head`, `info` y `describe` se obtuvo un panorama general de las variables.  
-   > 🔧 **En código**:  
-   - `df.shape` para dimensiones.  
+2. **Exploración inicial y detección de valores faltantes**
+   Con `shape`, `head`, `info` y `describe` se obtuvo un panorama general de las variables y se consultó si había datos faltantes por columna. 
    - `df.dtypes` y `df.isna().sum()` para tipos y valores faltantes.  
-   - `df.describe(include="all").T` para estadísticos descriptivos.  
-
-3. **Detección de valores faltantes**: se consultó si había datos faltantes por columna.  
-   > 🔧 **En código**:  
    - `df.isnull().sum().sort_values(ascending=False)` para ranking de nulos.  
+   
+   - `results/entrega1/valores.png`   
+   - `results/entrega1/outliers.png` 
 
-4. **Visualizaciones**: con `matplotlib` y `seaborn` se graficó y se exploraron distribuciones de variables.  
-   > 🔧 **En código**:  
-   - `sns.histplot`, `sns.countplot` y `sns.boxplot` para distribuciones.  
-   - `df['species'].value_counts().plot(kind="bar")` para frecuencias de Iris.  
+3. **Visualizaciones**: 
+   Con `matplotlib` y `seaborn` se graficó y se exploraron distribuciones de variables. Con `sns.histplot`, `sns.countplot` y `sns.boxplot` para distribuciones.  
 
-5. **Hallazgos preliminares**: se detectaron columnas con muchos nulos y se confirmó que el dataset tiene más películas que series y que la mayor parte del contenido se concentra en los últimos 20 años.  
-   > 🔧 **En código**:  
-   - Se verificó comparando `df['type'].value_counts()` en Netflix.  
-   - Para Iris, se hicieron correlaciones numéricas con `df.corr()` y conversiones de tipo categórico (`astype('category')`).  
+   * Se contaron las frecuencias de cada categoría
+   * Se visualizó lo mencionado y distribuciones por categoría:
+   - `results/entrega1/g.png` 
+   * Se visualizaron tendencias temporales:
+   - `results/entrega1/tem.png` 
+   
+5. **ANÁLISIS DE PAÍSES CON VISUALIZACIONES**
+   * Los 5 países con mayor contenido son:
+   United States     2609
+   India              838
+   United Kingdom     601
+   Canada             318
+   France             271
+   - `results/entrega1/gg.png`
+   * Los 5 ratings más comunes son:
+   TV-MA    2027
+   TV-14    1698
+   TV-PG     701
+   R         508
+   PG-13     286
+   - `results/entrega1/rat.png`
+    
+6. **Dashboard interactivo**
+   - `results/entrega1/dash.png`
 
 ## Evidencias
 - Notebook del análisis: [entrega_dos.ipynb](dos.ipynb)  
@@ -61,8 +69,6 @@ Próximos pasos: análisis con mayor profundidad, con datos actualizados y mayor
 
 ## Conclusión
 El análisis exploratorio me permitió validar el dataset de Netflix, con datos que nos permitieron trabajar y practicar (valores faltantes y variables confusas). Aun con esto, se identificaron tendencias como el crecimiento sostenido de producciones en las últimas dos décadas y el predominio de películas sobre series.  
-
-> 🔧 **Nota técnica**: la práctica con Iris permitió comprobar la **equivalencia de datasets de distintas fuentes** (`df1.equals(df2)`, etc.) y reforzar el manejo de tipos de datos y correlaciones, algo que será útil en análisis más avanzados.
 
 # Referencias 
 Dataset: https://www.kaggle.com/shivamb/netflix-shows  
