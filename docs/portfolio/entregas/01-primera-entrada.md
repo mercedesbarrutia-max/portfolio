@@ -29,6 +29,7 @@ Finalmente se trabajó con el dataset cargado desde CSV. Esto permitió ejercita
    Se instalaron librerías y se configuró la estructura para guardar resultados. Se importaron `pandas`, `numpy`, `seaborn`, `matplotlib`.  
 
 2. **Carga de datos**  
+   
    Se importó el dataset Iris desde cuatro fuentes distintas.   
    - CSV en GitHub → `pd.read_csv(url)`.  
    - Dataset de seaborn → `sns.load_dataset("iris")`.  
@@ -36,20 +37,22 @@ Finalmente se trabajó con el dataset cargado desde CSV. Esto permitió ejercita
    - Archivo local → `files.upload()` en Colab.  
    - Se compararon los dataframes con `df1.equals(df2)` para comprobar consistencia.  
 
-2. **Detección de valores faltantes y outliers**  
+3. **Detección de valores faltantes y outliers**  
+   
    - Valores faltantes: `df.isna().sum()`.  
    - Exploración con `describe()`, histogramas y boxplots.  
    - Frecuencias → `df["species"].value_counts()`.  
  
-3. **Se buscaron las correlaciones numéricas**
+4. **Se buscaron las correlaciones numéricas**
    Con `df.corr()` y conversiones categóricas (`astype('category')`). 
 
-4. **Preguntas iniciales:**
+5. **Preguntas iniciales:**
+
    * ¿Cuál es la especie con pétalo más largo?  
    * ¿Existe relación entre el largo del sépalo y del pétalo?  
    * ¿Cuál es la especie con promedio de sépalo más ancho?  
 
-5.  **Se respondieron preguntas adicionales en el notebook.** 
+6.  **Se respondieron preguntas adicionales en el notebook.** 
    Para finalizar se respondieron preguntas de análisis más profundo, las cuales fueron anexadas en la entrada del código. Las mismas pueden verse allí mismo.
 
 ## Evidencias

@@ -61,6 +61,7 @@ Se realizó un análisis sobre el dataset **Yellow Taxi** de NYC, integrándolo 
    * Visualización con heatmap de seaborn.
   
 3. **Se respondieron preguntas adicionales en el notebook.** 
+
    Para finalizar se respondieron preguntas de análisis más profundo, las cuales fueron anexadas en la entrada del código. Las mismas pueden verse allí mismo.
 
 ## Evidencias

@@ -25,6 +25,7 @@ El análisis se realizó sobre el dataset **AMES Housing**, con el objetivo de e
 ## Desarrollo
 
 1. **Detección de Outliers**  
+   
    * Métodos aplicados: **IQR** (distribuciones sesgadas) y **Z-Score** ( distribuciones normales).  
    * Se cuantificaron outliers en columnas clave.
    * Se visualizaron mediante **boxplots** con límites IQR y dispersión logarítmica en variables sesgadas.
@@ -64,6 +65,7 @@ El análisis se realizó sobre el dataset **AMES Housing**, con el objetivo de e
      - Variables categóricas: faltantes mínimos.  
 
 3. **Estrategias de Imputación**  
+   
    * **Numéricas**: media, mediana, moda según distribución.  
    * **Categóricas**: moda o “Unknown”.  
    * **Smart Imputation**:  
@@ -73,6 +75,7 @@ El análisis se realizó sobre el dataset **AMES Housing**, con el objetivo de e
      - `Garage Type` → moda 
 
 4. **Anti-Leakage y Validación**  
+   
    * Se aplicó split en Train/Valid/Test antes de imputar.  
    * Imputers ajustados solo con Train y aplicados al resto.  
 
@@ -91,6 +94,7 @@ El análisis se realizó sobre el dataset **AMES Housing**, con el objetivo de e
    - `results/entrega4/correlation_comparison.png`   
   
 6. **Pipeline reproducible**  
+   
    * Construcción de un **ColumnTransformer + Pipeline** en sklearn.  
    * Incluyó imputación (median, most_frequent), escalado (StandardScaler) y codificación categórica (OneHotEncoder).  
    * Resultados:
@@ -98,6 +102,7 @@ El análisis se realizó sobre el dataset **AMES Housing**, con el objetivo de e
       Shape después del pipeline: (2930, 46)
 
 7.  **Se respondieron preguntas adicionales en el notebook.** 
+   
    Para finalizar se respondieron preguntas de análisis más profundo, las cuales fueron anexadas en la entrada del código. Las mismas pueden verse allí mismo.
 
 
