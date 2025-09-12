@@ -35,9 +35,8 @@ El análisis se realizó sobre el dataset **AMES Housing**, con el objetivo de e
    * Métodos aplicados: **IQR** (distribuciones sesgadas) y **Z-Score** ( distribuciones normales).  
    * Se cuantificaron outliers en columnas clave.
    * Se visualizaron mediante **boxplots** con límites IQR y dispersión logarítmica en variables sesgadas.
-   * Resultados:
-      * RESUMEN DE OUTLIERS:
-  
+   * Resultados:  
+   
       Total de outliers detectados: 3365.0
       Porcentaje promedio de outliers: 2.94%
       Columna con más outliers: 459.0
@@ -58,12 +57,12 @@ El análisis se realizó sobre el dataset **AMES Housing**, con el objetivo de e
       IQR outliers: 42 (1.4%)
       Z-Score outliers: 17 (0.6%)
 
-      ![outliers](../../results/entrega4/outliers_analysis.png) 
+![outliers](results/entrega44/outliers_analysis.png) 
 
 **2\. Análisis de Missing Data**  
    
-   ![valores faltantes1](../../results/entrega4/missing_patterns.png)
-   ![valores faltantes2](../../results/entrega4/g1.png) 
+   ![valores faltantes1](results/entrega44/missing_patterns.png)
+   ![valores faltantes2](results/entrega44/g1.png)
 
    * Clasificación preliminar de missing:  
      - *Year Built*: tendencia a ser **MAR**.  
@@ -97,8 +96,8 @@ El análisis se realizó sobre el dataset **AMES Housing**, con el objetivo de e
 
 **5\. Comparación de distribuciones y correlaciones**  
    * Histogramas y barras compararon datos y heatmaps de correlaciones mostraron diferencias chicas:
-   ![distribucion](../../results/entrega4/distribution_comparison.png) 
-   ![correlacion](../../results/entrega4/correlation_comparison.png)  
+   ![distribucion](results/entrega44/distribution_comparison.png) 
+   ![correlacion](results/entrega44/correlation_comparison.png)  
   
 **6\. Pipeline reproducible**  
    
@@ -136,3 +135,8 @@ El dataset quedó **limpio, imputado y con outliers caracterizados**, listo para
 ## Referencias
 
 * scikit-learn pipelines — [https://scikit-learn.org/stable/modules/compose.html](https://scikit-learn.org/stable/modules/compose.html)  
+
+
+
+
+

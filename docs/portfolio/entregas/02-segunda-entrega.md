@@ -97,3 +97,4 @@ El análisis exploratorio me permitió validar el dataset de Netflix, con datos 
 - Dataset: [Netflix Shows (Kaggle)](https://www.kaggle.com/shivamb/netflix-shows)  
 - [Documentación de pandas](https://pandas.pydata.org/docs/)  
 - [Documentación de seaborn](https://seaborn.pydata.org/)  
+
