@@ -49,7 +49,7 @@ Finalmente se trabajó con el dataset cargado desde CSV. Esto permitió ejercita
    * ¿Existe relación entre el largo del sépalo y del pétalo?  
    * ¿Cuál es la especie con promedio de sépalo más ancho?  
 
-5.  **Se respondieron preguntas adicionales de negocio en el notebook.** 
+5.  **Se respondieron preguntas adicionales en el notebook.** 
    Para finalizar se respondieron preguntas de análisis más profundo, las cuales fueron anexadas en la entrada del código. Las mismas pueden verse allí mismo.
 
 ## Evidencias

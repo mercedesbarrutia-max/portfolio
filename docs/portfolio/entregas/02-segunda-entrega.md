@@ -60,6 +60,9 @@ El objetivo fue conocer la estructura de los datos, identificar valores faltante
 6. **Dashboard interactivo**
    - `results/entrega1/dash.png`
 
+7. **Se respondieron preguntas adicionales en el notebook.** 
+   Para finalizar se respondieron preguntas de análisis más profundo, las cuales fueron anexadas en la entrada del código. Las mismas pueden verse allí mismo.
+
 ## Evidencias
 - Notebook del análisis: [entrega_dos.ipynb](dos.ipynb)  
 

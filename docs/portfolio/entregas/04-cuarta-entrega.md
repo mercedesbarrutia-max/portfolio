@@ -86,8 +86,7 @@ El análisis se realizó sobre el dataset **AMES Housing**, con el objetivo de e
       Anti-leakage aplicado: fit solo en train, transform en todo
 
 5. **Comparación de distribuciones y correlaciones**  
-   * Histogramas y barras compararon datos originales vs imputados.  
-   * Heatmaps de correlaciones mostraron diferencias menores tras imputación.  
+   * Histogramas y barras compararon datos y heatmaps de correlaciones mostraron diferencias chicas:
    - `results/entrega4/distribution_comparison.png` 
    - `results/entrega4/correlation_comparison.png`   
   
@@ -95,8 +94,12 @@ El análisis se realizó sobre el dataset **AMES Housing**, con el objetivo de e
    * Construcción de un **ColumnTransformer + Pipeline** en sklearn.  
    * Incluyó imputación (median, most_frequent), escalado (StandardScaler) y codificación categórica (OneHotEncoder).  
    * Resultados:
-      Shape antes del pipeline: {df.shape}
+      Shape antes del pipeline: (2930, 82)
       Shape después del pipeline: (2930, 46)
+
+7.  **Se respondieron preguntas adicionales en el notebook.** 
+   Para finalizar se respondieron preguntas de análisis más profundo, las cuales fueron anexadas en la entrada del código. Las mismas pueden verse allí mismo.
+
 
 ## Evidencias
 
