@@ -1,8 +1,7 @@
 ---
-
 title: "Análisis Exploratorio — Archivo Tres (NYC Yellow Taxi)"
 date: 2025-08-27
-----------------
+---
 
 # Análisis Exploratorio — Archivo tres (NYC Yellow Taxi)
 

@@ -55,7 +55,7 @@ Finalmente se trabajó con el dataset cargado desde CSV. Esto permitió ejercita
    Para finalizar se respondieron preguntas de análisis más profundo, las cuales fueron anexadas en la entrada del código. Las mismas pueden verse allí mismo.
 
 ## Evidencias
-- Notebook del análisis: [entrega_uno.ipynb](entrega_uno.ipynb)
+- Notebook del análisis: [entrega_uno.ipynb](uno.ipynb)
 
 ## Reflexión
 Lo más desafiante: cargar los datos desde distintas fuentes y formas que no conocía.  

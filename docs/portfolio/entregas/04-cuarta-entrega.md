@@ -1,8 +1,7 @@
-
 ---
-
-# 04-cuarta-entrega.md (AMES Housing)
-
+title: "Análisis Exploratorio AMES Housing"
+date: 2025-08-07
+---
 
 # Análisis Exploratorio — Archivo Cuatro (AMES Housing)
 

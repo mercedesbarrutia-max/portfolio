@@ -36,8 +36,8 @@ El objetivo fue conocer la estructura de los datos, identificar valores faltante
    df.isnull().sum().sort_values(ascending=False)
    ```
 
-   ![Valores faltantes](../results/entrega2/valores.png)  
-   ![Outliers](../results/entrega2/outliers.png)  
+   ![Valores faltantes](results/entrega2/valores.png)  
+   ![Outliers](results/entrega2/outliers.png)  
 
 **3\. Visualizaciones** 
    
@@ -45,9 +45,9 @@ El objetivo fue conocer la estructura de los datos, identificar valores faltante
 
    - Se contaron las frecuencias de cada categoría.  
    - Distribuciones por categoría:  
-     ![Distribuciones por categoría](../results/entrega2/g.png)  
+     ![Distribuciones por categoría](results/entrega2/g.png)  
    - Tendencias temporales:  
-     ![Tendencias temporales](../results/entrega2/tem.png)  
+     ![Tendencias temporales](results/entrega2/tem.png)  
 
 **4\. Análisis de países con visualizaciones**  
 
@@ -61,7 +61,7 @@ El objetivo fue conocer la estructura de los datos, identificar valores faltante
      France             271
      ```
 
-     ![Top países](../results/entrega2/gg.png)  
+     ![Top países](results/entrega2/gg.png)  
 
    - Los 5 ratings más comunes son:  
 
@@ -73,11 +73,11 @@ El objetivo fue conocer la estructura de los datos, identificar valores faltante
      PG-13     286
      ```
 
-     ![Top ratings](../results/entrega2/rat.png)  
+     ![Top ratings](results/entrega2/rat.png)  
 
 **5\. Dashboard interactivo**  
    
-   ![Dashboard](../results/entrega2/dash.png)  
+   ![Dashboard](results/entrega2/dash.png)  
 
 **6\. Se respondieron preguntas adicionales en el notebook**  
    
