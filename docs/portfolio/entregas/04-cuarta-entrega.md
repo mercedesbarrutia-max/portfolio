@@ -3,7 +3,7 @@
 
 # 04-cuarta-entrega.md (AMES Housing)
 
-```markdown
+
 # Análisis Exploratorio — Archivo Cuatro (AMES Housing)
 
 ## Contexto
@@ -65,6 +65,7 @@ El análisis se realizó sobre el dataset **AMES Housing**, con el objetivo de e
    ![valores faltantes2](results/entrega44/g1.png)
 
    * Clasificación preliminar de missing:  
+
      - *Year Built*: tendencia a ser **MAR**.  
      - *Garage Area/Type*: **MNAR**.  
      - *SalePrice*: sin faltantes detectados.  
@@ -86,16 +87,18 @@ El análisis se realizó sobre el dataset **AMES Housing**, con el objetivo de e
    * Imputers ajustados solo con Train y aplicados al resto.  
 
    * Resultados:
+  
       SPLIT DE DATOS 
-      Train: 1758 registros
-      Valid: 586 registros
-      Test: 586 registros
-      Columnas numéricas: 38
-      Columnas categóricas: 43
-      Anti-leakage aplicado: fit solo en train, transform en todo
+
+         Train: 1758 registros
+         Valid: 586 registros
+         Test: 586 registros
+         Columnas numéricas: 38
+         Columnas categóricas: 43
+         Anti-leakage aplicado: fit solo en train, transform en todo
 
 **5\. Comparación de distribuciones y correlaciones**  
-   * Histogramas y barras compararon datos y heatmaps de correlaciones mostraron diferencias chicas:
+   Histogramas y barras compararon datos y heatmaps de correlaciones mostraron diferencias chicas:
    ![distribucion](results/entrega44/distribution_comparison.png) 
    ![correlacion](results/entrega44/correlation_comparison.png)  
   
@@ -104,7 +107,9 @@ El análisis se realizó sobre el dataset **AMES Housing**, con el objetivo de e
    * Construcción de un **ColumnTransformer + Pipeline** en sklearn.  
    * Incluyó imputación (median, most_frequent), escalado (StandardScaler) y codificación categórica (OneHotEncoder).  
    * Resultados:
+
       Shape antes del pipeline: (2930, 82)
+
       Shape después del pipeline: (2930, 46)
 
 **7\. Se respondieron preguntas adicionales en el notebook.** 
@@ -118,13 +123,15 @@ El análisis se realizó sobre el dataset **AMES Housing**, con el objetivo de e
     
 ## Reflexión
 
-* **Aprendizajes**:  
+**Aprendizajes**:  
+
   - Importancia de distinguir entre tipos de missing data (MCAR/MAR/MNAR).  
   - Diferencia entre métodos de outlier detection (IQR vs Z-Score).  
   - Uso de estrategias de imputación (por grupo, luego global).  
   - Necesidad de pipelines para reproducibilidad y evitar data leakage.  
 
-* **Siguientes pasos**:  
+**Siguientes pasos**:  
+
   - Testear métodos más avanzados.  
   - Integrar este pipeline en un flujo completo de modelado (regresión o árboles).  
 

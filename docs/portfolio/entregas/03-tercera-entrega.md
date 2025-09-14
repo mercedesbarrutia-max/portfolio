@@ -70,20 +70,22 @@ Se realizó un análisis sobre el dataset **Yellow Taxi** de NYC, integrándolo 
 
 ## Reflexión
 
-* **Aprendizajes**:
-  - Lectura directa de **Parquet** (mucho más eficiente que CSV).  
-  - Normalización previa evita errores en joins.  
-  - El **LEFT JOIN** permite conservar todos los viajes, incluso sin zona.  
-  - Prefect facilita reintentos y estructuración del pipeline.  
+**Aprendizajes**:
+
+  * Lectura directa de Parquet (mucho más eficiente que CSV).  
+  * Normalización previa evita errores en joins.  
+  * El LEFT JOIN permite conservar todos los viajes, incluso sin zona.  
+  * Prefect facilita reintentos y estructuración del pipeline.  
   
-* **Siguientes pasos**:
-  - Incorporar dropoff zones y análisis origen‑destino.
-  - Modelar demanda por franja horaria y borough. 
-  - Posible incorporación de **tarifas dinámicas.
+**Siguientes pasos**:
+
+  * Incorporar dropoff zones y análisis origen‑destino.
+  * Modelar demanda por franja horaria y borough. 
+  * Posible incorporación de tarifas dinámicas.
 
 ## Conclusión
 
-El dataset está **completo** para las variables que analizamos y fue útil para aprender sobre parquet, tema desconocido hasta el momento. Ahora la base queda lista para profundizar en patrones origen‑destino o segmentación por zonas.
+El dataset está completo para las variables que analizamos y fue útil para aprender sobre parquet, tema desconocido hasta el momento. Ahora la base queda lista para profundizar en patrones origen‑destino o segmentación por zonas.
 
 ## Referencias
 
