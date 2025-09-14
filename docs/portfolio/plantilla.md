@@ -89,7 +89,7 @@ Click para ampliar (lightbox):
 
 ### Enlaces internos y relativos
 
-Consultá también: [Acerca de mí](../acerca.md) y [Recursos](../recursos.md).
+Consultá también: [Acerca de mí](../acerca.md).
 
 ### Notas al pie y citas
 
