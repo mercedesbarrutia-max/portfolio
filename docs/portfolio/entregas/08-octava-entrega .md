@@ -17,16 +17,12 @@ date: 2025-10-01
 
 ## Actividades
 
-* Parte I - Boston Housing: DETECTAR Sesgo Histórico — 30 min  
-   * Analizar sesgo oculto en variable 'B' (proporción afroamericana)
-   * Cuantificar impacto del sesgo en predicciones (regresión)
-   * Analizar correlaciones y distribuciones por grupos raciales
-* Parte II - Titanic: DETECTAR + CORREGIR Sesgo Sistemático — 30 min  
-   * Detectar sesgo género/clase en protocolo "Women and Children First"
-   * Analizar interseccionalidad (género × clase social)
-   * Aplicar Fairlearn para corrección (clasificación natural)
-* Parte III - Aplicar en Ames Housing — 30 min  
-* Conclusiones finales — 20 min  
+* Setup y Carga de Datos - 5 min
+* Crear Dataset Sintético y Features Derivadas - 10 min
+* Análisis de Distribución de Features — 25 min
+* Evaluación de Importancia de Features - 10 min
+* Investigación Libre - 15 min
+* Aplicar con AMES - 30 min  
 
 
 ## Desarrollo
@@ -48,7 +44,7 @@ date: 2025-10-01
 
 ## Evidencias
 
-* Notebook del análisis: **[07 - Sesgo con Fairlearn.ipynb](siete.ipynb)**
+* Notebook del análisis: **[08 - Feature Engineering.ipynb](ocho.ipynb)**
     
 ## Reflexión
 

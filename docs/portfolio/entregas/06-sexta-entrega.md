@@ -6,6 +6,7 @@ date: 2025-09-24
 # Análisis Exploratorio — Feature Scaling & Anti-Leakage Pipeline
 
 ## Contexto
+
 ESTA ENTREGA ES UNA CONTINUACIÓN DE LA PRÁCTICA ANTERIOR
 
 ## Objetivos
