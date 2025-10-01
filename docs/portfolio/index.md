@@ -20,7 +20,6 @@ date: 2025-08-08
 ## Entradas del Portafolio
 
 - **[01 - Exploración del dataset Iris](entregas/01-primera-entrada.md)**  
-  
 
 - **[02 - EDA Netflix Dataset con pandas](entregas/02-segunda-entrega.md)**  
   
@@ -30,7 +29,8 @@ date: 2025-08-08
 
 - **[05 y 06 - AMES HOUSING](entregas/05-quinta-entrega.md)**  
   
-- **[07 - AMES HOUSING](entregas/06-sexta-entrega.md)**  
+- **[07 - Sesgo con Fairlearn](entregas/06-sexta-entrega.md)**  
+
 ---
 
 
