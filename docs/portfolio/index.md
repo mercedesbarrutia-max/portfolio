@@ -27,12 +27,14 @@ date: 2025-08-08
   
 - **[04 - AMES HOUSING](entregas/04-cuarta-entrega.md)**  
 
-- **[05 y 06 - AMES HOUSING](entregas/05-quinta-entrega.md)**  
+- **[05 - AMES HOUSING](entregas/05-quinta-entrega.md)** 
+ 
+- **[06 - AMES HOUSING](entregas/06-sexta-entrega.md)**  
   
-- **[07 - Sesgo con Fairlearn](entregas/06-sexta-entrega.md)**  
+- **[07 - Sesgo con Fairlearn](entregas/07-septima-entrega.md)**  
 
+- **[08 - Feature Engineering](entregas/08-octava-entrega.md)**  
 ---
-
 
 ## Sobre este portafolio
 
