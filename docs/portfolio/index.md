@@ -26,9 +26,11 @@ date: 2025-08-08
   
 - **[03 - NYC Yellow Taxi](entregas/03-tercera-entrega.md)**  
   
-
 - **[04 - AMES HOUSING](entregas/04-cuarta-entrega.md)**  
+
+- **[05 y 06 - AMES HOUSING](entregas/05-quinta-entrega.md)**  
   
+- **[07 - AMES HOUSING](entregas/06-sexta-entrega.md)**  
 ---
 
 
