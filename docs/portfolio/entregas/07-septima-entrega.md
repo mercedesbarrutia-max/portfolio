@@ -41,6 +41,8 @@ date: 2025-10-01
 **4\. Anti-Leakage y Validación**  
    
 **5\. Comparación de distribuciones y correlaciones**  
+
+   ![Top ratings](results/entrega2/image.png)
   
 **6\. Pipeline reproducible**  
    

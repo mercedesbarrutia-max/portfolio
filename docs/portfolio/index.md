@@ -19,6 +19,8 @@ date: 2025-08-08
 
 ## Entradas del Portafolio
 
+# UNIDAD 1 
+
 - **[01 - Exploración del dataset Iris](entregas/01-primera-entrada.md)**  
 
 - **[02 - EDA Netflix Dataset con pandas](entregas/02-segunda-entrega.md)**  
@@ -27,13 +29,27 @@ date: 2025-08-08
   
 - **[04 - AMES HOUSING](entregas/04-cuarta-entrega.md)**  
 
+# UNIDAD 2
+
 - **[05 - AMES HOUSING](entregas/05-quinta-entrega.md)** 
  
 - **[06 - AMES HOUSING](entregas/06-sexta-entrega.md)**  
   
 - **[07 - Sesgo con Fairlearn](entregas/07-septima-entrega.md)**  
 
+# UNIDAD 3 (sin terminar aún)
+
 - **[08 - Feature Engineering](entregas/08-octava-entrega.md)**  
+
+ 
+---
+
+## Tareas extra y de interés personal 
+
+- **[ML 01](entregas/extra_uno)**  
+
+- **[ML 02](entregas/extra_dos)**
+
 ---
 
 ## Sobre este portafolio
