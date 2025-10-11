@@ -39,7 +39,7 @@ date: 2025-08-08
 
 # UNIDAD 3 (sin terminar aún)
 
-- **[08 - Feature Engineering](entregas/08-octava-entrega.md)**  
+- **[08 - Feature Engineering](entregas/08-octava-entrega .md)**  
 
  
 ---
