@@ -3,18 +3,20 @@ title: "Análisis Exploratorio de Netflix"
 date: 2025-08-21
 ---
 
-# Análisis Exploratorio de Netflix
+# Tendencias del catálogo de Netflix: exploración visual y datos faltantes
 
 ## Contexto
-Se realizó un análisis exploratorio del dataset público de Netflix, que contiene información sobre películas y series.  
-El objetivo fue conocer la estructura de los datos, identificar valores faltantes y obtener visualizaciones descriptivas.
+
+Se realizó un análisis exploratorio del dataset público de Netflix, que contiene información sobre películas y series.  El crecimiento del contenido en streaming ha transformado la industria audiovisual. Este análisis parte del dataset de Netflix para explorar patrones de producción, géneros y países predominantes, detectando además problemas de calidad en los datos, conocer la estructura de los datos, identificar valores faltantes y obtener visualizaciones descriptivas.
 
 ## Objetivos
+
 - Cargar y explorar el dataset de Netflix desde una fuente online.
 - Identificar y cuantificar datos faltantes.
 - Generar visualizaciones para entender la distribución de variables.
 
 ## Actividades (con tiempos estimados)
+
 - Carga y exploración inicial del dataset — 15 min  
 - Análisis de valores faltantes — 15 min  
 - Visualizaciones exploratorias — 30 min  
@@ -87,13 +89,16 @@ El objetivo fue conocer la estructura de los datos, identificar valores faltante
 - Notebook del análisis: [entrega_dos.ipynb](dos.ipynb)  
 
 ## Reflexión
+
 Aprendizaje: recordé funciones de pandas, matplotlib y seaborn y aprendí características de EDPA.  
 Próximos pasos: análisis con mayor profundidad, con datos actualizados y mayor cantidad de variables.  
 
 ## Conclusión
+
 El análisis exploratorio me permitió validar el dataset de Netflix, con datos que nos permitieron trabajar y practicar (valores faltantes y variables confusas). Aun con esto, se identificaron tendencias como el crecimiento sostenido de producciones en las últimas dos décadas y el predominio de películas sobre series.  
 
 ## Referencias 
+
 - Dataset: [Netflix Shows (Kaggle)](https://www.kaggle.com/shivamb/netflix-shows)  
 - [Documentación de pandas](https://pandas.pydata.org/docs/)  
 - [Documentación de seaborn](https://seaborn.pydata.org/)  

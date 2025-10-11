@@ -3,12 +3,14 @@ title: "Análisis Exploratorio AMES Housing"
 date: 2025-09-17
 ---
 
-# Análisis Exploratorio — Missing Data Detective
+# Missing Data Detective: analizando outliers y datos faltantes en Ames Housing
 
 ## Contexto
 
-El análisis se realizó sobre el dataset **AMES Housing**, con el objetivo de estudiar los datos faltantes, detectar outlier y hacer análisis éticos al respecto. 
-El dataset Ames Housing tiene datos faltantes y outliers que afectan las predicciones de precios, nosotros tenemos que detectar patrones de missing data y outliers para limpiar el dataset.
+En esta entrega se trabajó con el dataset Ames Housing, que contiene información detallada sobre precios y características de viviendas.  
+El objetivo fue estudiar la presencia de datos faltantes** y outliers, identificar su impacto en el modelado y diseñar estrategias de imputación y limpieza que mantengan la integridad del dataset.
+
+Este análisis también incluyó una mirada ética sobre el tratamiento de los datos, reflexionando sobre las implicancias de modificar o eliminar observaciones que podrían representar casos reales con valor analítico.
 
 ## Objetivos
 
@@ -30,19 +32,30 @@ El dataset Ames Housing tiene datos faltantes y outliers que afectan las predicc
 * Pipeline de Limpieza Reproducible - 10 min
 * Conclusiones finales - 20 min 
 
+
 ## Desarrollo
 
-**1\. Análisis inicial del dataset**  
-   
-**2\. Análisis de Missing Data y detección de Outliers**  
+**1\.Análisis inicial del dataset**  
+Se cargó el dataset Ames Housing, verificando su estructura y los tipos de datos.  
+Se detectaron columnas numéricas y categóricas con valores faltantes.
 
-**3\. Visualización de outliers y estrategias de imputación**  
-   
-**4\. Anti-Leakage y Validación**  
-   
-**5\. Comparación de distribuciones y correlaciones**  
-  
-**6\. Pipeline reproducible**  
+**2\. Detección de Missing Data**  
+Con `df.isna().sum()` se cuantificaron los valores faltantes. Se identificaron patrones MAR y MNAR.
+
+**3\. Detección de outliers**
+Se aplicaron los métodos **IQR** y **Z-Score** sobre variables continuas.  
+El 2,9 % de los registros presentaron valores atípicos significativos.
+
+**4\. Imputación y validación** 
+Se implementaron estrategias de imputación:
+- Media o mediana según distribución.  
+- Moda o "Unknown" para categóricas.  
+
+**5\. Anti-Leakage**  
+Las imputaciones se realizaron únicamente sobre el set de entrenamiento, evitando el data leakage en validación y test.
+
+**6\. Pipeline reproducible** 
+Se construyó un ColumnTransformer + Pipeline con `sklearn`, que integró imputación, codificación y escalado.  
    
 **7\. Se respondieron preguntas adicionales en el notebook.** 
    
@@ -50,13 +63,15 @@ El dataset Ames Housing tiene datos faltantes y outliers que afectan las predicc
 ## Evidencias
 
 * Notebook del análisis: **[05 - AMES valores faltantes.ipynb](cinco.ipynb)**
-    
-## Reflexión
+* Gráficos: `results/entrega5/outliers.png`, `results/entrega5/missing_patterns.png`
 
-**Aprendizajes**:  
-  
+
+## Reflexión
+El ejercicio reafirmó la importancia de comprender por qué los datos faltan antes de decidir cómo tratarlos.  
+Además, trabajar con anti-leakage reforzó buenas prácticas de ingeniería de datos, mostrando que la limpieza debe ser tanto técnicamente correcta como éticamente responsable.
+
+---
 
 ## Conclusión
-
-
+El dataset quedó limpio, imputado y con outliers caracterizados. Se documentaron todas las decisiones y se consolidó un pipeline reproducible, listo para entrenamiento de modelos predictivos confiables.
 

@@ -4,19 +4,23 @@ date: 2025-08-13
 ---
 
 # Entrada 01 — Mi primera experiencia
+# Explorando las flores del Iris: primeras prácticas con Pandas y visualización
 
 ## Contexto
+
 Actividad inicial del curso en la cual trabajé con el dataset **Iris**.  
-El objetivo fue practicar la carga de datos desde diferentes fuentes (GitHub, seaborn, sklearn, archivo local) y verificar la consistencia entre datasets, además de responder preguntas simples sobre especies de flores.
+El dataset Iris es uno de los conjuntos más usados en ciencia de datos para introducir conceptos de clasificación. En esta práctica, el objetivo fue practicar la carga de datos desde diferentes fuentes y verificar la consistencia entre datasets, además de responder preguntas simples sobre especies de flores.
 
 Finalmente se trabajó con el dataset cargado desde CSV. Esto permitió ejercitar la carga, limpieza, exploración y visualización de un dataset real.
 
 ## Objetivos
+
 - Familiarizarme con el trabajo del portafolio.
 - Practicar carga y exploración de datos en Python.
 - Plantear y responder preguntas básicas a partir de un dataset.
 
 ## Actividades (con tiempos estimados)
+
 - Configurar entorno y repositorio — 30 min  
 - Cargar dataset Iris desde distintas fuentes — 15 min  
 - Formular y responder preguntas de negocio iniciales — 20 min  
@@ -62,4 +66,5 @@ Lo más desafiante: cargar los datos desde distintas fuentes y formas que no con
 Próximos pasos: avanzar hacia análisis más profundo (estadísticas comparativas por especie) y visualizaciones más avanzadas.  
 
 ## Conclusión
-Esta primera práctica permitió reforzar conceptos básicos de manejo de datos en Python. El dataset Iris fue ideal para practicar carga, exploración y validación de datos.  
+
+Esta primera práctica permitió reforzar conceptos básicos de manejo de datos en Python. El dataset Iris fue ideal para practicar carga, exploración y validación de datos.  Esta experiencia me permitió comprender cómo la estructura de los datos influye en las preguntas que podemos hacernos. Descubrí que la forma en que los datos se cargan y validan determina la fiabilidad de todo análisis posterior.

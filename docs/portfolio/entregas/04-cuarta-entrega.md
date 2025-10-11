@@ -3,11 +3,12 @@ title: "Análisis Exploratorio AMES Housing"
 date: 2025-08-07
 ---
 
-# Análisis Exploratorio — Archivo Cuatro (AMES Housing)
+# Limpieza y preparación del dataset Ames Housing: outliers, missing y pipelines
 
 ## Contexto
 
 El análisis se realizó sobre el dataset **AMES Housing**, con el objetivo de estudiar la calidad de los datos, detectar outliers, implementar estrategias de imputación y preparar un pipeline reproducible para futuros modelos predictivos.
+El dataset Ames Housing es ampliamente utilizado para enseñanza de modelado predictivo. Este análisis se centró en preparar datos confiables para futuros modelos de precios de viviendas, aplicando detección de outliers, imputaciones inteligentes y creación de un pipeline reproducible.
 
 ## Objetivos
 

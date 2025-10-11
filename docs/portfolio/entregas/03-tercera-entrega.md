@@ -3,11 +3,12 @@ title: "Análisis Exploratorio — Archivo Tres (NYC Yellow Taxi)"
 date: 2025-08-27
 ---
 
-# Análisis Exploratorio — Archivo tres (NYC Yellow Taxi)
+# Taxis amarillos de Nueva York: integrando Parquet, mapas y calendario
 
 ## Contexto
 
-Se realizó un análisis sobre el dataset **Yellow Taxi** de NYC, integrándolo con el mapa de zonas de taxis y un calendario de eventos. El foco estuvo en validar la calidad de los datos, preparar datos para joins y obtener vistas descriptivas útiles para luego contestar preguntas.
+Este proyecto combina datos de viajes de taxi en formato Parquet con información geográfica y eventos del calendario de la ciudad. El objetivo fue evaluar cómo la demanda varía según zonas y fechas especiales, usando técnicas de integración y análisis exploratorio reproducible, validar la calidad de los datos, preparar datos para joins y obtener vistas descriptivas útiles para luego contestar preguntas.
+Se realizó un análisis sobre el dataset **Yellow Taxi** de NYC, integrándolo con el mapa de zonas de taxis y un calendario de eventos.
 
 ## Objetivos
 
@@ -85,6 +86,7 @@ Se realizó un análisis sobre el dataset **Yellow Taxi** de NYC, integrándolo 
 ## Conclusión
 
 El dataset está completo para las variables que analizamos y fue útil para aprender sobre parquet, tema desconocido hasta el momento. Ahora la base queda lista para profundizar en patrones origen‑destino o segmentación por zonas.
+Comprendí la potencia de los formatos Parquet para grandes volúmenes y la importancia de documentar correctamente los joins entre fuentes heterogéneas. El uso de Prefect aportó visión de flujo y automatización.
 
 ## Referencias
 
