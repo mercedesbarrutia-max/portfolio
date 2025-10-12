@@ -32,8 +32,7 @@ Finalmente se trabajó con el dataset cargado desde CSV. Esto permitió ejercita
    Se instalaron librerías y se configuró la estructura para guardar resultados. Se importaron `pandas`, `numpy`, `seaborn`, `matplotlib`.  
 
 **2\. Carga de datos**  
-   Se importó el dataset Iris desde cuatro fuentes distintas.  
-
+   Se importó el dataset Iris desde cuatro fuentes distintas.   
     - CSV en GitHub → `pd.read_csv(url)`.  
     - Dataset de seaborn → `sns.load_dataset("iris")`.  
     - Dataset de sklearn → `load_iris(as_frame=True)`.  
