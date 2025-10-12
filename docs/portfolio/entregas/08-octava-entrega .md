@@ -1,5 +1,5 @@
 ---
-title: "Entrega siete: Feature Engineering con Pandas"
+title: "Entrega ocho: Feature Engineering con Pandas"
 date: 2025-10-01
 ---
 
@@ -16,7 +16,6 @@ date: 2025-10-01
 
 
 ## Actividades
-
 * Setup y Carga de Datos - 5 min
 * Crear Dataset Sintético y Features Derivadas - 10 min
 * Análisis de Distribución de Features — 25 min

@@ -52,7 +52,35 @@ El pipeline con `StandardScaler` y `RobustScaler` resultó más estable y reprod
 
 ## Evidencias
 * Notebook: **[06 - Feature Scaling Pipeline.ipynb](cinco.ipynb)**  
-* Gráficos: `results/entrega6/scaler_comparison.png`, `results/entrega6/distribution_after_scaling.png`
+* Gráficos: `results/entregacinco.png`, `results/entregacincodos.png`
+
+---
+## Resultados
+
+MIS HALLAZGOS:
+Columna más problemática: Misc Val (también Total Bsmt SF por tener muchos ceros)
+Ratio más alto: Lot Area ≈ 165 (sin contar ratios infinitos por ceros)
+¿Por qué es problemático?: 
+- Misc Val y Total Bsmt SF tienen muchos ceros → ratio infinito y distribución muy sesgada.
+- Lot Area presenta outliers extremos de terrenos gigantes, lo que genera un ratio muy alto.
+- Estas escalas y outliers distorsionan algoritmos basados en distancia (KNN, SVM).
+
+ROUND 1: DATOS ORIGINALES
+IQR originales: 127
+Z-score originales: 29
+⚡ ROUND 2: DESPUÉS DEL ESCALADO
+           Scaler  IQR  Z-Score
+0  StandardScaler  127       29
+1    MinMaxScaler  127       29
+2    RobustScaler  127       29
+
+CONCLUSIONES:
+- StandardScaler mantiene proporciones, así que detecta los mismos outliers.
+- MinMaxScaler no cambia el orden relativo, pero comprime al [0,1], los outliers extremos suelen seguir siendo visibles.
+- RobustScaler usa mediana y IQR, así que reduce la influencia de outliers → algunos 'desaparecen'.
+
+Luego de aplicar box-cox (ver tarea extra numero cuatro para mayor entendimiento):
+`results/entregaextracuatro.png`
 
 ---
 

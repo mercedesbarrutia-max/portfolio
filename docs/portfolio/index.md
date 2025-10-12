@@ -19,6 +19,7 @@ date: 2025-08-08
 
 ## Entradas del Portafolio
 
+
 # UNIDAD 1 
 
 - **[01 - Exploración del dataset Iris](entregas/01-primera-entrada.md)**  
@@ -49,6 +50,10 @@ date: 2025-08-08
 - **[ML 01](entregas/extra_uno)**  
 
 - **[ML 02](entregas/extra_dos)**
+
+- **[API JSON del clima](entregas/extra_tres)**  
+
+- **[Trabajo independiente](entregas/extra_cuatro)**
 
 ---
 

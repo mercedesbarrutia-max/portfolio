@@ -25,21 +25,21 @@ El avance del aprendizaje automático trae el desafío de garantizar la equidad 
 
 ## Actividades
 
-* Parte 1 - Boston Housing: DETECTAR Sesgo Histórico — 30 min  
+- Parte 1 - Boston Housing: DETECTAR Sesgo Histórico — 30 min  
   
    * Analizar sesgo oculto en variable 'B' (proporción afroamericana)
    * Cuantificar impacto del sesgo en predicciones (regresión)
    * Analizar correlaciones y distribuciones por grupos raciales
   
-* Parte 2 - Titanic: DETECTAR + CORREGIR Sesgo Sistemático — 30 min  
+- Parte 2 - Titanic: DETECTAR + CORREGIR Sesgo Sistemático — 30 min  
   
    * Detectar sesgo género/clase en protocolo "Women and Children First"
    * Analizar interseccionalidad (género × clase social)
    * Aplicar Fairlearn para corrección (clasificación natural)
   
-* Parte 3 - Aplicar en Ames Housing — 30 min  
+- Parte 3 - Aplicar en Ames Housing — 30 min  
   
-* Conclusiones finales — 20 min  
+- Conclusiones finales — 20 min  
 
 
 ## Desarrollo
@@ -60,6 +60,7 @@ El avance del aprendizaje automático trae el desafío de garantizar la equidad 
 
 ## Evidencias
 * Notebook: **[07 - Sesgo con Fairlearn.ipynb](siete.ipynb)**  
+* Gráficos: `results/entregasiete.png`
 
 ---
 

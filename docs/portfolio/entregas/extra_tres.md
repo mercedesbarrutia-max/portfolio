@@ -1,3 +1,7 @@
+---
+title: "Tarea Extra — Explorando datos climáticos del mundo con la API Open-Meteo"
+date: 2025-09-01
+---
 
 # Explorando datos climáticos del mundo con la API Open-Meteo
 

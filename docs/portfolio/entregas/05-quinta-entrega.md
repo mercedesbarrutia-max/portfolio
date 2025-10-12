@@ -63,7 +63,7 @@ Se construyó un ColumnTransformer + Pipeline con `sklearn`, que integró imputa
 ## Evidencias
 
 * Notebook del análisis: **[05 - AMES valores faltantes.ipynb](cinco.ipynb)**
-* Gráficos: `results/entrega5/outliers.png`, `results/entrega5/missing_patterns.png`
+* Gráficos: `results/entregacinco.png`, `results/entregacincodos.png`
 
 
 ## Reflexión
