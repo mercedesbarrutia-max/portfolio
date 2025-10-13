@@ -7,8 +7,7 @@ date: 2025-09-17
 
 ## Contexto
 
-En esta entrega se trabajó con el dataset Ames Housing, que contiene información detallada sobre precios y características de viviendas.  
-El objetivo fue estudiar la presencia de datos faltantes** y outliers, identificar su impacto en el modelado y diseñar estrategias de imputación y limpieza que mantengan la integridad del dataset.
+En esta entrega se trabajó con el dataset Ames Housing, que contiene información detallada sobre precios y características de viviendas. El objetivo fue estudiar la presencia de datos faltantes y outliers, identificar su impacto en el modelado y diseñar estrategias de imputación y limpieza que mantengan la integridad del dataset.
 
 Este análisis también incluyó una mirada ética sobre el tratamiento de los datos, reflexionando sobre las implicancias de modificar o eliminar observaciones que podrían representar casos reales con valor analítico.
 

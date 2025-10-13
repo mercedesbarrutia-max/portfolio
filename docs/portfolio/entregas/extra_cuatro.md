@@ -21,7 +21,7 @@ Como trabajo independiente, como se pedía en la tarea 7 de la UT2 se profundiz�
 
 ## Desarrollo
 
-### 🔹 Transformación Box–Cox
+### Transformación Box–Cox
 La transformación **Box–Cox** se aplicó sobre las variables `SalePrice`, `Lot Area`, `Misc Val` y `Total Bsmt SF` utilizando `PowerTransformer(method='box-cox')`.  
 
 Previamente se implementó un **transformador personalizado** (`PositiveShift`) para desplazar los valores a positivos y así permitir el uso correcto de Box–Cox. Debido a que este transformador no funciona com valores nulos o faltantes.
@@ -43,10 +43,10 @@ Esta estrategia evitó errores de validación y permitió incluir la transformac
 
 | Variable      | Skew Antes | Skew Después (Box–Cox) | Mejora |
 | :------------ | :--------: | :--------------------: | :----: |
-| SalePrice     |    1.44    |          0.07          |    ✅   |
-| Lot Area      |    12.82   |          0.10          |    ✅   |
-| Misc Val      |    22.00   |          5.05          |    ✅   |
-| Total Bsmt SF |    1.16    |          0.11          |    ✅   |
+| SalePrice     |    1.44    |          0.07          |    SI  |
+| Lot Area      |    12.82   |          0.10          |    SI  |
+| Misc Val      |    22.00   |          5.05          |    SI  |
+| Total Bsmt SF |    1.16    |          0.11          |    SI  |
 
 Las distribuciones se volvieron mucho más simétricas, reduciendo la asimetría y la varianza. Los histogramas evidenciaron una normalización clara y la reducción del efecto de los outliers.
 
