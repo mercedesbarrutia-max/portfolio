@@ -63,8 +63,9 @@ Se construyó un ColumnTransformer + Pipeline con `sklearn`, que integró imputa
 ## Evidencias
 
 * Notebook del análisis: **[05 - AMES valores faltantes.ipynb](cinco.ipynb)**
-* Gráficos: `results/entregacinco.png`, `results/entregacincodos.png`
-
+* Gráficos: 
+![distribución](results/entregacinco.png)  
+![distribución](results/entregacincodos.png) 
 
 ## Reflexión
 El ejercicio reafirmó la importancia de comprender por qué los datos faltan antes de decidir cómo tratarlos.  

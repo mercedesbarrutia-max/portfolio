@@ -52,7 +52,10 @@ El pipeline con `StandardScaler` y `RobustScaler` resultó más estable y reprod
 
 ## Evidencias
 * Notebook: **[06 - Feature Scaling Pipeline.ipynb](cinco.ipynb)**  
-* Gráficos: `results/entregacinco.png`, `results/entregacincodos.png`
+* Gráficos: 
+
+![distribución](results/entregacinco.png)  
+![distribución](results/entregacincodos.png) 
 
 ---
 ## Resultados
@@ -80,7 +83,8 @@ CONCLUSIONES:
 - RobustScaler usa mediana y IQR, así que reduce la influencia de outliers → algunos 'desaparecen'.
 
 Luego de aplicar box-cox (ver tarea extra numero cuatro para mayor entendimiento):
-`results/entregaextracuatro.png`
+![distribución](results/entregaextracuatro.png) 
+
 
 ---
 

@@ -53,7 +53,8 @@ Las distribuciones se volvieron mucho más simétricas, reduciendo la asimetría
 
 ## Evidencias
 * Notebook: **[06 - Feature Scaling Pipeline.ipynb](cinco.ipynb)**  
-* Gráficos: `results/entregaextracuatro.png`
+* Gráficos: 
+![distribución](results/entregaextracuatro.png) 
 
 
 ## Reflexión

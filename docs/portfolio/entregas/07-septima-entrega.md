@@ -60,7 +60,8 @@ El avance del aprendizaje automático trae el desafío de garantizar la equidad 
 
 ## Evidencias
 * Notebook: **[07 - Sesgo con Fairlearn.ipynb](siete.ipynb)**  
-* Gráficos: `results/entregasiete.png`
+* Gráficos:  
+![distribución](results/entregasiete.png) 
 
 ---
 
