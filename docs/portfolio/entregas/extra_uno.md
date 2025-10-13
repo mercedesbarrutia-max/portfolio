@@ -39,6 +39,7 @@ El objetivo es predecir la presencia de enfermedad cardíaca** y proponer una es
    - Discutir cuáles variables parecen relevantes.
 
 **Salidas**
+
 - Métricas en test: accuracy, precision, recall, F1, AUC-ROC, AUC-PR.
 - Tabla de coeficientes (modelo sin regularizar vs. mejor regularizado).
 
@@ -47,6 +48,7 @@ El objetivo es predecir la presencia de enfermedad cardíaca** y proponer una es
 ## Árbol de decisión
 
 **Tareas**
+
 1. Entrenar un **Decision Tree Classifier** optimizando hiperparámetros clave mediante **GridSearchCV** o **RandomizedSearchCV**:
    - `max_depth`, `min_samples_split`, `min_samples_leaf`, `max_features`, `ccp_alpha`.
   
@@ -56,6 +58,7 @@ El objetivo es predecir la presencia de enfermedad cardíaca** y proponer una es
 3. Analizar complejidad vs. generalización: mostrar el efecto de `max_depth` (o `ccp_alpha`) en desempeño de validación.
 
 **Salidas**
+
 - Métricas en test.
 - Gráfico: desempeño vs. `max_depth`
 
@@ -64,6 +67,7 @@ El objetivo es predecir la presencia de enfermedad cardíaca** y proponer una es
 ## Random Forest
 
 **Tareas**
+
 1. Entrenar un Random Forest Classifier optimizando hiperparámetros con GridSearchCV o RandomizedSearchCV:
    - `n_estimators`, `max_features`, `max_depth`, `min_samples_leaf`, `min_samples_split`, `bootstrap`.
   
@@ -76,6 +80,7 @@ El objetivo es predecir la presencia de enfermedad cardíaca** y proponer una es
    - Si usa `bootstrap=True`, incluir OOB score (`oob_score=True`) para evidenciar que no sobreajusta al incrementar árboles.
 
 **Salidas**
+
 - Métricas en test.
 - Top-k variables más informativas.
 - Gráfico desempeño vs. `n_estimators`.
@@ -85,6 +90,7 @@ El objetivo es predecir la presencia de enfermedad cardíaca** y proponer una es
 ## Comparativa de modelos
 
 **Tareas**
+
 1. Comparar Regresión Logística (mejor variante) vs. Árbol vs. Random Forest.
 
 2. Incluyendo:

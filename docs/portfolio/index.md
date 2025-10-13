@@ -22,7 +22,7 @@ date: 2025-08-08
 
 # UNIDAD 1 
 
-- **[01 - # Explorando las flores del Iris: primeras prácticas con Pandas y visualización](entregas/01-primera-entrada.md)**  
+- **[01 - Explorando las flores del Iris: primeras prácticas con Pandas y visualización](entregas/01-primera-entrada.md)**  
 
 - **[02 - Tendencias del catálogo de Netflix: exploración visual y datos faltantes](entregas/02-segunda-entrega.md)**  
   
@@ -47,13 +47,13 @@ date: 2025-08-08
 
 ## Tareas extra y de interés personal 
 
-- **[ML 01](entregas/extra_uno)**  
+- **[ML - 01](entregas/extra_uno)**  
 
-- **[ML 02](entregas/extra_dos)**
+- **[ML - 02](entregas/extra_dos)**
 
-- **[API JSON del clima](entregas/extra_tres)**  
+- **[IDD - API JSON datos del clima](entregas/extra_tres)**  
 
-- **[Trabajo independiente](entregas/extra_cuatro)**
+- **[IDD - Anexo tarea seis (trabajo independiente)](entregas/extra_cuatro)**
 
 ---
 
