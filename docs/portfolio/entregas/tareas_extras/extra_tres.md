@@ -30,7 +30,7 @@ El objetivo fue ejercitar la conexión a una API real, transformar su respuesta 
 
 ## Evidencias
 
-* Notebook del análisis: **[Tarea extra 03.ipynb](tarea_extra_tres.ipynb)**
+* Notebook del análisis: **[Tarea extra 03.ipynb](../tareas_extras/tarea_extra_tres.ipynb)**
 
 ## Reflexión
 

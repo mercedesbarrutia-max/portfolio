@@ -28,7 +28,7 @@ No se especifica una georreferenciación ni metadatos de ubicación exacta → n
 
 ## Evidencias
 
-* Notebook del análisis: **[Tarea_extra_02.ipynb](tarea_extra_dos.ipynb)**
+* Notebook del análisis: **[Tarea_extra_02.ipynb](../tareas_extras/tarea_extra_dos.ipynb)**
 
 
 

@@ -57,12 +57,12 @@ El dataset Ames Housing es ampliamente utilizado para enseñanza de modelado pre
       IQR outliers: 42 (1.4%)
       Z-Score outliers: 17 (0.6%)
 
-![outliers](results/entrega44/outliers_analysis.png) 
+![outliers](../imagenes/UT2/cuatro/outliers_analysis.png) 
 
 **2\. Análisis de Missing Data**  
    
-   ![valores faltantes1](results/entrega44/missing_patterns.png)
-   ![valores faltantes2](results/entrega44/g1.png)
+   ![valores faltantes1](../imagenes/UT2/cuatro/missing_patterns.png)
+   ![valores faltantes2](../imagenes/UT2/cuatro/g1.png)
 
    * Clasificación preliminar de missing:  
 
@@ -99,8 +99,8 @@ El dataset Ames Housing es ampliamente utilizado para enseñanza de modelado pre
 
 **5\. Comparación de distribuciones y correlaciones**  
    Histogramas y barras compararon datos y heatmaps de correlaciones mostraron diferencias chicas:
-   ![distribucion](results/entrega44/distribution_comparison.png) 
-   ![correlacion](results/entrega44/correlation_comparison.png)  
+   ![distribucion](../imagenes/UT2/cuatro/distribution_comparison.png) 
+   ![correlacion](../imagenes/UT2/cuatro/correlation_comparison.png)  
   
 **6\. Pipeline reproducible**  
    
@@ -119,7 +119,7 @@ El dataset Ames Housing es ampliamente utilizado para enseñanza de modelado pre
 
 ## Evidencias
 
-* Notebook del análisis: **[04 - AMES valores faltantes.ipynb](cuatro.ipynb)**
+* Notebook del análisis: **[04 - AMES valores faltantes.ipynb](../tareas_obligatorias/cuatro.ipynb)**
     
 ## Reflexión
 

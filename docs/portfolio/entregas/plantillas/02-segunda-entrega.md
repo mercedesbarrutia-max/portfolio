@@ -38,8 +38,8 @@ Se realizó un análisis exploratorio del dataset público de Netflix, que conti
    df.isnull().sum().sort_values(ascending=False)
    ```
 
-   ![Valores faltantes](results/entrega2/valores.png)  
-   ![Outliers](results/entrega2/outliers.png)  
+   ![Valores faltantes](../imagenes/UT1/dos/foto1.png)  
+   ![Outliers](../imagenes/UT1/dos/foto2.png)  
 
 **3\. Visualizaciones** 
    
@@ -47,9 +47,9 @@ Se realizó un análisis exploratorio del dataset público de Netflix, que conti
 
    - Se contaron las frecuencias de cada categoría.  
    - Distribuciones por categoría:  
-     ![Distribuciones por categoría](results/entrega2/g.png)  
+     ![Distribuciones por categoría](../imagenes/UT1/dos/foto3.png)  
    - Tendencias temporales:  
-     ![Tendencias temporales](results/entrega2/tem.png)  
+     ![Tendencias temporales](../imagenes/UT1/dos/foto4.png)  
 
 **4\. Análisis de países con visualizaciones**  
 
@@ -63,7 +63,7 @@ Se realizó un análisis exploratorio del dataset público de Netflix, que conti
      France             271
      ```
 
-     ![Top países](results/entrega2/gg.png)  
+     ![Top países](../imagenes/UT1/dos/foto5.png)  
 
    - Los 5 ratings más comunes son:  
 
@@ -75,18 +75,18 @@ Se realizó un análisis exploratorio del dataset público de Netflix, que conti
      PG-13     286
      ```
 
-     ![Top ratings](results/entrega2/rat.png)  
+     ![Top ratings](../imagenes/UT1/dos/foto6.png)  
 
 **5\. Dashboard interactivo**  
    
-   ![Dashboard](results/entrega2/dash.png)  
+   ![Dashboard](../imagenes/UT1/dos/foto7.png)  
 
 **6\. Se respondieron preguntas adicionales en el notebook**  
    
    Para finalizar se respondieron preguntas de análisis más profundo, las cuales fueron anexadas en la entrada del código.  
 
 ## Evidencias
-- Notebook del análisis: [entrega_dos.ipynb](dos.ipynb)  
+- Notebook del análisis: [entrega_dos.ipynb](../tareas_obligatorias/dos.ipynb)  
 
 ## Reflexión
 

@@ -66,7 +66,7 @@ Se realizó un análisis sobre el dataset **Yellow Taxi** de NYC, integrándolo 
 
 ## Evidencias
 
-* Notebook del análisis: **[03-tercera-entrega.ipynb](tres.ipynb)**
+* Notebook del análisis: **[03-tercera-entrega.ipynb](../tareas_obligatorias/tres.ipynb)**
 
 ## Reflexión
 

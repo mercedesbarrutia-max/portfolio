@@ -106,7 +106,7 @@ El objetivo es predecir la presencia de enfermedad cardíaca** y proponer una es
 
 ## Evidencias
 
-* Notebook del análisis: **[Tarea_extra_01.ipynb](tarea_extra_uno.ipynb)**
+* Notebook del análisis: **[Tarea_extra_01.ipynb](../tareas_extras/tarea_extra_uno.ipynb)**
 
 
 
