@@ -40,13 +40,13 @@ date: 2025-08-08
 
 # UNIDAD 3 
 
-- **[08 - Feature Engineering con pandas](entregas/plantillas/08-octava-entrega.md)**
+- **[08 - Preparación y Transformación de Datos para Modelado](entregas/plantillas/08-octava-entrega.md)**
 
-- **[09 - Feature Engineering con pandas](entregas/plantillas/09-novena-entrega.md)**
+- **[09 - Encoding Avanzado: Técnicas de Codificación y Transformación de Datos](entregas/plantillas/09-novena-entrega.md)**
 
 - **[10 - Feature Engineering con pandas](entregas/plantillas/10-decima-entrega.md)**
 
-- **[11 - Feature Engineering con pandas](entregas/plantillas/11-onceava-entrega.md)**
+- **[11 - Temporal Features: Extracción y Análisis de Variables Temporales](entregas/plantillas/11-onceava-entrega.md)**
  
 ---
 
