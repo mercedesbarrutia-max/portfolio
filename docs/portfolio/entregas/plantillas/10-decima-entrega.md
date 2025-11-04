@@ -56,7 +56,7 @@ Los pasos fueron:
 El PCA mostró que con 3 componentes se retenía aproximadamente el 90 % de la varianza total, reduciendo significativamente la dimensionalidad sin pérdida notable de información.
 
 ![Varianza acumulada por componentes](../imagenes/UT3/entregadiez/image.png)  
-![Componentes principales](../imagenes/UT3/entyregadiez/image2.png)
+![Componentes principales](../imagenes/UT3/entregadiez/image2.png)
 
 
 ### 4. Visualización y análisis
