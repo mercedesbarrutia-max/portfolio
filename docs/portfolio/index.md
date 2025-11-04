@@ -44,7 +44,7 @@ date: 2025-08-08
 
 - **[09 - Encoding Avanzado: Técnicas de Codificación y Transformación de Datos](entregas/plantillas/09-novena-entrega.md)**
 
-- **[10 - Feature Engineering con pandas](entregas/plantillas/10-decima-entrega.md)**
+- **[10 - PCA y Selección de Features: Reducción de Dimensionalidad y Relevancia de Variables](entregas/plantillas/10-decima-entrega.md)**
 
 - **[11 - Temporal Features: Extracción y Análisis de Variables Temporales](entregas/plantillas/11-onceava-entrega.md)**
  
