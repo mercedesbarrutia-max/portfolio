@@ -60,6 +60,12 @@ date: 2025-08-08
 
 - **[IDD - Anexo tarea seis (trabajo independiente)](entregas/tareas_extras/extra_cuatro)**
 
+- **[IDD - Encoding y Feature Engineering con el Dataset Titanic](entregas/tareas_extras/extra_cinco)**  
+  
+- **[IDD - Selección de Features y PCA con el Dataset Wine](entregas/tareas_extras/extra_seis)**
+
+- **[IDD - Análisis de Comportamiento de Clientes con Temporal Features y PCA](entregas/tareas_extras/extra_siete)**
+
 ---
 
 ## Sobre este portafolio
