@@ -39,7 +39,7 @@ El modelo de clasificación **Random Forest** alcanzó un accuracy de **0.784**,
 
 ## Evidencias
 
-- Notebook: [tarea_extra_1.ipynb](../tareas_extras/extra_cinco.ipynb)  
+- Notebook: [tarea_extra_1.ipynb](../tareas_extras/tarea_extra_cinco.ipynb)  
 
 ## Reflexión
 

@@ -35,7 +35,7 @@ Por último, se entrenó un modelo Random Forest para clasificar a los clientes 
 
 ## Evidencias
 
-- Notebook: [tarea_extra_3.ipynb](../tareas_extras/tarea_extra_3.ipynb)  
+- Notebook: [tarea_extra_3.ipynb](../tareas_extras/tarea_extra_tres.ipynb)  
 - Visualización de proyección PCA:  
   ![Clientes proyectados en PCA](../imagenes/extras/image.png)  
 
