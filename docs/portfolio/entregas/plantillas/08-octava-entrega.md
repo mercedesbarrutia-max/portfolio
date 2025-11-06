@@ -12,6 +12,7 @@ El objetivo fue aplicar técnicas de Feature Engineering para crear, transformar
 
 
 ## Objetivos
+
 * DETECTAR sesgo histórico en datasets reales (Boston Housing + Titanic)
 * ANALIZAR impacto del sesgo en predicciones de modelos
 * COMPARAR estrategias: detección (regresión) vs corrección (clasificación)
@@ -42,21 +43,21 @@ Las columnas incluyeron `price`, `sqft`, `bedrooms`, `bathrooms`, `year_built`, 
 
 Se aplicaron diferentes estrategias:
 
-- **Ratios y proporciones:**  
+**Ratios y proporciones:**  
   - `price_per_sqft` (precio por m²)  
   - `sqft_per_bedroom` (superficie por habitación)  
   - `mi_ratio_1` (superficie/lote)  
   - `mi_ratio_2` (distancia a ciudad / rating escolar)
 
-- **Variables temporales:**  
+**Variables temporales:**  
   - `property_age` (antigüedad de la propiedad)  
   - `age_category` (clasificación en antiguo, moderno o nuevo)  
   - `is_new_property` (binario para propiedades nuevas)
 
-- **Transformaciones matemáticas:**  
+**Transformaciones matemáticas:**  
   - `log_price`, `sqrt_sqft`, `sqft_squared`  
 
-- **Features compuestas:**  
+**Features compuestas:**  
   - `luxury_score` (precio + superficie + amenities)  
   - `location_score` (relación entre distancia, rating escolar y crimen)
 

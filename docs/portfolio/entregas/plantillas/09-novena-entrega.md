@@ -3,7 +3,7 @@ title: "Encoding Avanzado: Técnicas de Codificación y Transformación de Datos
 date: 2025-10-15
 ---
 
-# Codificación de variables categóricas en el dataset Adult Income (Census)
+# Codificación de variables categóricas en el dataset Adult Income 
 
 ## Contexto
 
@@ -52,7 +52,8 @@ Los resultados obtenidos fueron:
 - Accuracy **0.84**  
 - AUC-ROC **0.90**  
 - F1-Score **0.64**  
-- 
+
+
 **4\. One-Hot Encoding y Random Forest**
 
 Para evitar el aumento excesivo de dimensiones, se aplicó One-Hot Encoding solo a las variables de baja cardinalidad. Se volvió a entrenar el Random Forest con las columnas codificadas y las variables numéricas.  
@@ -77,8 +78,7 @@ Los resultados se mantuvieron similares (Accuracy ≈ **0.85**, AUC-ROC ≈ **0.
 ## Reflexión
 
 Aprendí a manejar datasets reales con muchas variables categóricas y a reconocer los límites de cada tipo de encoding.  
-Comprendí cómo la cardinalidad influye directamente en la dimensionalidad y en el tiempo de entrenamiento.  
-Como mejora futura, me gustaría probar Target Encoding para medir su impacto en la performance.
+Comprendí cómo la cardinalidad influye directamente en la dimensionalidad y en el tiempo de entrenamiento. Como mejora futura, me gustaría probar Target Encoding para medir su impacto en la performance.
 
 ## Conclusión
 
